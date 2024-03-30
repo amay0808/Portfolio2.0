@@ -1,74 +1,77 @@
 import React from "react";
+import "../components/HomePage.css";
 
 function HomePage() {
-  return (
+return (
     <div>
-      <h1>Adrian Mayfiled</h1>
+        <div id="bio">
+            <h1>Adrian Mayfield</h1>
+            <p>Nice to meet you! I'm Adrian.</p>
+            <p>
+                Based in California's Central Valley, I'm a FullStack Developer
+                dedicated to crafting user-friendly web applications.
+            </p>
+            <button>Contact me</button>
+        </div>
 
-      <p>Nice to meet you! I'm Adrian.</p>
+        <div id="skills">
+            <h2>Skills</h2>
+            <h3>HTML</h3>
+            <p>3 Years Experience</p>
+            <h3>CSS</h3>
+            <p>3 Years Experience</p>
+            <h3>JavaScript</h3>
+            <p>2 Years Experience</p>
+            <h3>React</h3>
+            <p>2 Years Experience</p>
+            <h3>Node</h3>
+            <p>2 Years Experience</p>
+            <h3>MongoDB</h3>
+            <p>2 Years Experience</p>
+            <h3>Express</h3>
+            <p>2 Years Experience</p>
+            <h3>Python</h3>
+            <p>1 Years Experience</p>
+        </div>
 
-      <p>
-        Based in the Central Valley, I'm a front-end developer passionate about
-        building accessible web apps that users love.
-      </p>
+        <div id="projects">
+            <h2>Projects</h2>
+            <img
+                src={require("../assets/images/project-around-the-us.png")}
+                alt="Project thumbnail"
+                className="project-image"
+            />
+            <h3>Design portfolio</h3>
+            <p>HTML CSS</p>
+            <button>View project</button>
+            <button>View code</button>
+            {/* Add the rest of your projects here */}
+        </div>
 
-      <button>Contact me</button>
-
-      <h2>HTML</h2>
-      <p>4 Years Experience</p>
-
-      <h2>CSS</h2>
-      <p>4 Years Experience</p>
-
-      <h2>JavaScript</h2>
-      <p>4 Years Experience</p>
-
-      <h2>Accessibility</h2>
-      <p>4 Years Experience</p>
-
-      <h2>React</h2>
-      <p>3 Years Experience</p>
-
-      <h2>Sass</h2>
-      <p>3 Years Experience</p>
-
-      <h2>Projects</h2>
-
-      <button>Contact me</button>
-
-      <h3>Design portfolio</h3>
-      <p>HTML CSS</p>
-      <button>View project</button>
-      <button>View code</button>
-
-      {/* Add the rest of your projects here */}
-
-      <h2>Contact</h2>
-
-      <p>
-        I would love to hear about your project and how I could help. Please
-        fill in the form, and I’ll get back to you as soon as possible.
-      </p>
-
-      <form>
-        <label>
-          Name
-          <input type="text" name="name" />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" />
-        </label>
-        <label>
-          Message
-          <textarea name="message"></textarea>
-        </label>
-        <input type="submit" value="Send message" />
-      </form>
-
-      <p>Adrian Mayfield</p>
+        <div id="contact">
+            <h2>Contact</h2>
+            <p>
+                I would love to hear about your project and how I could help. Please
+                fill in the form, and I’ll get back to you as soon as possible.
+            </p>
+            <form>
+                <label>
+                    Name
+                    <input type="text" name="name" />
+                </label>
+                <label>
+                    Email
+                    <input type="email" name="email" />
+                </label>
+                <label>
+                    Message
+                    <textarea name="message"></textarea>
+                </label>
+                <input type="submit" value="Send message" />
+            </form>
+        </div>
     </div>
-  );
+);
 }
 
 export default HomePage;
