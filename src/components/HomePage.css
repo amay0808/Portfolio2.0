@@ -1,4 +1,17 @@
-.project-image{
-    width: 540px;
-    height: 400px;
+.project-image {
+  width: 540px;
+  height: 400px;
+}
+.my-name {
+  display: flex;
+  justify-content: center;
+  width: 172px;
+  height: 32px;
+  margin-left: 169px;
+  margin-top: 39px;
+}
+.bio {
+}
+.highlight {
+  border-bottom: 3px solid green;
 }
