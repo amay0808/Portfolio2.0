@@ -1,3 +1,7 @@
+body {
+  padding-left: 165px;
+  padding-right: 164.51px;
+}
 .project-image {
   width: 540px;
   height: 400px;
@@ -23,14 +27,16 @@
 }
 
 .bio {
-  display: grid;
+  width: 706px;
+  height: 303px;
   justify-content: center;
   align-content: center;
   font-family: "Space Grotesk Bold";
   background-color: gray;
   font-size: 88px;
   margin-top: 209.17px;
-  margin-right: 612.65px;
+  position: relative; /* Add this */
+  z-index: 2;
 }
 .bio p {
   margin: 0; /* remove default margin */
@@ -39,6 +45,20 @@
   font-size: 18px;
   font-weight: normal;
   font-family: "Space Grotesk Bold";
+  margin-bottom: 43px;
+}
+.bio-details {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 43px;
+}
+.profile-image {
+  position: absolute;
+  top: 0;
+  width: 445px;
+  height: 720px;
+  margin-left: 665px;
+  z-index: 1;
 }
 .skills-list {
   display: grid;

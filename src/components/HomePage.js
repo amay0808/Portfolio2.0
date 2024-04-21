@@ -4,8 +4,20 @@ import "../components/HomePage.css";
 function HomePage() {
   return (
     <div>
+      <div className="ovals"></div>
+      <div className="ovals"></div>
+      <div className="ovals"></div>
+      <div className="ovals"></div>
+      <div className="ovals"></div>
       <div id="name">
         <p className="my-name">adrianmayfield</p>
+        <div>
+          <img
+            src={require("../assets/images/profile-pic.webp")}
+            alt="Profile"
+            className="profile-image"
+          />
+        </div>
       </div>
       <div className="bio">
         <p>Nice to meet you!</p>
@@ -13,10 +25,12 @@ function HomePage() {
           I'm
           <span className="highlight-name"> Adrian Mayfield.</span>
         </p>
-        <p className="description">
-          Based in California's Central Valley, I'm a FullStack Developer
-          dedicated to crafting user-friendly web applications.
-        </p>
+        <div className="bio-details">
+          <p className="description">
+            Based in California's Central Valley, I'm a FullStack Developer
+            dedicated to crafting user-friendly web applications.
+          </p>
+        </div>
         <button>Contact me</button>
       </div>
 
