@@ -4,41 +4,60 @@ import "../components/HomePage.css";
 function HomePage() {
   return (
     <div>
-      <div id="bio">
-        <h1 className="my-name">Adrian Mayfield</h1>
+      <div id="name">
+        <p className="my-name">adrianmayfield</p>
       </div>
       <div className="bio">
+        <p>Nice to meet you!</p>
         <p>
-          Nice to meet you! <span className="highlight">I'm Adrian</span>.
+          I'm
+          <span className="highlight-name"> Adrian Mayfield.</span>
         </p>
-        <p>
+        <p className="description">
           Based in California's Central Valley, I'm a FullStack Developer
           dedicated to crafting user-friendly web applications.
         </p>
         <button>Contact me</button>
       </div>
 
-      <div id="skills">
+      <section id="skills">
         <h2>Skills</h2>
-        <h3>HTML</h3>
-        <p>3 Years Experience</p>
-        <h3>CSS</h3>
-        <p>3 Years Experience</p>
-        <h3>JavaScript</h3>
-        <p>2 Years Experience</p>
-        <h3>React</h3>
-        <p>2 Years Experience</p>
-        <h3>Node</h3>
-        <p>2 Years Experience</p>
-        <h3>MongoDB</h3>
-        <p>2 Years Experience</p>
-        <h3>Express</h3>
-        <p>2 Years Experience</p>
-        <h3>Python</h3>
-        <p>1 Years Experience</p>
-      </div>
-
-      <div id="projects">
+        <ul className="skills-list">
+          <li>
+            <h3>HTML</h3>
+            <p>3 Years Experience</p>
+          </li>
+          <li>
+            <h3>CSS</h3>
+            <p>3 Years Experience</p>
+          </li>
+          <li>
+            <h3>JavaScript</h3>
+            <p>2 Years Experience</p>
+          </li>
+          <li>
+            <h3>React</h3>
+            <p>2 Years Experience</p>
+          </li>
+          <li>
+            <h3>Node</h3>
+            <p>2 Years Experience</p>
+          </li>
+          <li>
+            <h3>MongoDB</h3>
+            <p>2 Years Experience</p>
+          </li>
+          <li>
+            <h3>Express</h3>
+            <p>2 Years Experience</p>
+          </li>
+          <li>
+            <h3>Python</h3>
+            <p>1 Years Experience</p>
+          </li>
+        </ul>
+      </section>
+      <section id="projects">
         <h2>Projects</h2>
         <img
           src={require("../assets/images/project-around-the-us.png")}
@@ -67,9 +86,9 @@ function HomePage() {
         <p>HTML CSS JavaScript</p>
         <button>View project</button>
         <button>View code</button>
-      </div>
+      </section>
 
-      <div id="contact">
+      <section id="contact">
         <h2>Contact</h2>
         <p>
           I would love to hear about your project and how I could help. Please
@@ -90,7 +109,7 @@ function HomePage() {
           </label>
           <input type="submit" value="Send message" />
         </form>
-      </div>
+      </section>
     </div>
   );
 }

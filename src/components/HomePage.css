@@ -2,16 +2,54 @@
   width: 540px;
   height: 400px;
 }
-.my-name {
+.name {
   display: flex;
   justify-content: center;
   width: 172px;
   height: 32px;
-  margin-left: 169px;
+  margin-right: 165px;
   margin-top: 39px;
 }
-.bio {
+.my-name {
+  position: absolute;
+  font-size: 32px;
+  font-weight: bold;
+  top: 39px;
+  left: 165px;
 }
-.highlight {
+
+.highlight-name {
   border-bottom: 3px solid green;
+}
+
+.bio {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-family: "Space Grotesk Bold";
+  background-color: gray;
+  font-size: 88px;
+  margin-top: 209.17px;
+  margin-right: 612.65px;
+}
+.bio p {
+  margin: 0; /* remove default margin */
+}
+.description {
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Space Grotesk Bold";
+}
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  display: flex;
+  flex-direction: column;
 }
