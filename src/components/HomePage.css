@@ -6,24 +6,25 @@ body {
   width: 540px;
   height: 400px;
 }
-.name {
+/* .name {
   display: flex;
   justify-content: center;
   width: 172px;
   height: 32px;
   margin-right: 165px;
   margin-top: 39px;
-}
-.my-name {
-  position: absolute;
+} */
+#my-name {
+  width: 172px;
+  height: 32px;
   font-size: 32px;
   font-weight: bold;
   top: 39px;
   left: 165px;
 }
 
-.highlight-name {
-  border-bottom: 3px solid green;
+#highlight-name {
+  border-bottom: 3px solid #4ee1a0;
 }
 
 .bio {
@@ -37,11 +38,20 @@ body {
   margin-top: 209.17px;
   position: relative; /* Add this */
   z-index: 2;
+  margin-left: 118px;
 }
+/* .greetings {
+  height: 88px;
+  width: 709px;
+} */
 .bio p {
   margin: 0; /* remove default margin */
 }
-.description {
+#description {
+  width: 445px;
+  height: 84px;
+  display: flex;
+  flex-wrap: wrap;
   font-size: 18px;
   font-weight: normal;
   font-family: "Space Grotesk Bold";
@@ -57,9 +67,27 @@ body {
   top: 0;
   width: 445px;
   height: 720px;
-  margin-left: 665px;
+  margin-left: 830px;
+  margin-right: 165px;
   z-index: 1;
 }
+/* #skills-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-top: 104px;
+}
+
+.skills-list li {
+  display: flex;
+  flex-direction: column;
+}
+.skills-section {
+  margin-top: 100px; /* Adjust this value as needed */
+
 .skills-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -67,9 +95,14 @@ body {
   gap: 20px;
   list-style: none;
   padding: 0;
+  margin-top: 104px;
 }
 
 .skills-list li {
   display: flex;
   flex-direction: column;
+}
+
+.skills-section {
+  margin-top: 100px; /* Adjust this value as needed */
 }
