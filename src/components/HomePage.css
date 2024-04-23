@@ -1,7 +1,3 @@
-body {
-  padding-left: 165px;
-  padding-right: 164.51px;
-}
 .project-image {
   width: 540px;
   height: 400px;
@@ -20,7 +16,7 @@ body {
   font-size: 32px;
   font-weight: bold;
   top: 39px;
-  left: 165px;
+  margin-left: 118px;
 }
 
 #highlight-name {
@@ -40,10 +36,6 @@ body {
   z-index: 2;
   margin-left: 118px;
 }
-/* .greetings {
-  height: 88px;
-  width: 709px;
-} */
 .bio p {
   margin: 0; /* remove default margin */
 }
