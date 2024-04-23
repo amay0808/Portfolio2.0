@@ -4,6 +4,7 @@ import "../components/HomePage.css";
 function HomePage() {
   return (
     <div>
+      <p id="my-name">adrianmayfield</p>
       <div classname="oval-design">
         <div className="ovals"></div>
         <div className="ovals"></div>
@@ -11,31 +12,31 @@ function HomePage() {
         <div className="ovals"></div>
         <div className="ovals"></div>
       </div>
-      <div className="bio-section">
-        <p id="my-name">adrianmayfield</p>
-        <div>
-          <img
-            src={require("../assets/images/profile-pic.webp")}
-            alt="Profile"
-            className="profile-image"
-          />
-        </div>
-      </div>
-      <div className="bio">
-        <p id="greetings">Nice to meet you!</p>
-        <p>
-          I'm
-          <span id="highlight-name"> Adrian.</span>
-        </p>
-        <div className="bio-details">
-          <p id="description">
-            Based in California's Central Valley, I'm a FullStack Developer
-            dedicated to crafting user-friendly web applications.
+      <div className="intro-section">
+        <div className="bio">
+          <p id="greetings">Nice to meet you!</p>
+          <p>
+            I'm
+            <span id="highlight-name"> Adrian.</span>
           </p>
+          <div className="bio-details">
+            <p id="description">
+              Based in California's Central Valley, I'm a FullStack Developer
+              dedicated to crafting user-friendly web applications.
+            </p>
+          </div>
+          <button id="contact-btn">CONTACT ME</button>
         </div>
-        <button>Contact me</button>
+        <div className="bio-section">
+          <div>
+            <img
+              src={require("../assets/images/profile-pic.webp")}
+              alt="Profile"
+              className="profile-image"
+            />
+          </div>
+        </div>
       </div>
-
       <section className="skills-section">
         <h2>Skills</h2>
         <ul className="skills-list">

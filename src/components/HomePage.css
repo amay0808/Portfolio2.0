@@ -1,41 +1,52 @@
+body {
+  background-color: black;
+  color: white;
+  padding: 165px;
+  padding-top: 0;
+  padding-bottom: 92px;
+  box-sizing: border-box;
+}
+
 .project-image {
   width: 540px;
   height: 400px;
 }
-/* .name {
+.intro-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  width: 172px;
-  height: 32px;
-  margin-right: 165px;
-  margin-top: 39px;
-} */
+  align-items: center;
+}
+.bio-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 #my-name {
+  position: absolute;
   width: 172px;
   height: 32px;
   font-size: 32px;
   font-weight: bold;
-  top: 39px;
-  margin-left: 118px;
+  margin-top: 39px;
 }
 
 #highlight-name {
-  border-bottom: 3px solid #4ee1a0;
+  border-bottom: 4px solid #4ee1a0;
 }
 
 .bio {
-  width: 706px;
-  height: 303px;
+  flex: 1;
+  width: auto;
+  height: auto;
   justify-content: center;
   align-content: center;
   font-family: "Space Grotesk Bold";
-  background-color: gray;
   font-size: 88px;
   margin-top: 209.17px;
-  position: relative; /* Add this */
-  z-index: 2;
-  margin-left: 118px;
 }
+
 .bio p {
   margin: 0; /* remove default margin */
 }
@@ -55,30 +66,9 @@
   margin-top: 43px;
 }
 .profile-image {
-  position: absolute;
-  top: 0;
   width: 445px;
   height: 720px;
-  margin-left: 830px;
-  margin-right: 165px;
-  z-index: 1;
 }
-/* #skills-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin-top: 104px;
-}
-
-.skills-list li {
-  display: flex;
-  flex-direction: column;
-}
-.skills-section {
-  margin-top: 100px; /* Adjust this value as needed */
 
 .skills-list {
   display: grid;
@@ -96,5 +86,40 @@
 }
 
 .skills-section {
-  margin-top: 100px; /* Adjust this value as needed */
+  margin-top: 100px;
+}
+#contact-btn {
+  color: white;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding-bottom: 12px;
+  border-bottom: #4ee1a0 2px solid;
+}
+#contact-btn:hover {
+  color: #4ee1a0;
+}
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column-reverse;
+  }
+}
+.profile-image {
+  margin-left: 0; /* Reset the margin on mobile view */
+}
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column-reverse;
+  }
+  .profile-image {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  #my-name {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
