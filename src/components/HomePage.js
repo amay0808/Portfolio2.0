@@ -1,19 +1,16 @@
 import React from "react";
 import "../components/HomePage.css";
-
+import PatternRings from "../assets/images/pattern-rings.svg";
+import ProfilePic from "../assets/images/profile-pic.webp";
 function HomePage() {
   return (
     <div>
       <p id="my-name">adrianmayfield</p>
-      <div classname="oval-design">
-        <div className="ovals"></div>
-        <div className="ovals"></div>
-        <div className="ovals"></div>
-        <div className="ovals"></div>
-        <div className="ovals"></div>
-      </div>
       <div className="intro-section">
         <div className="bio">
+          <div classname="rings">
+            <img src={PatternRings} alt="rings" className="rings-image" />
+          </div>
           <p id="greetings">Nice to meet you!</p>
           <p>
             I'm
@@ -29,11 +26,7 @@ function HomePage() {
         </div>
         <div className="bio-section">
           <div>
-            <img
-              src={require("../assets/images/profile-pic.webp")}
-              alt="Profile"
-              className="profile-image"
-            />
+            <img src={ProfilePic} alt="Profile" className="profile-image" />
           </div>
         </div>
       </div>
