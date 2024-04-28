@@ -34,28 +34,31 @@ function HomePage() {
             <a
               href="https://www.frontendmentor.io/profile/amay0808"
               target="_blank"
-              rel="frontendmentor"
-            ></a>
-
-            <img src={Icon1} alt="Frontend Mentor" />
+              rel="noopener noreferrer"
+            >
+              <img src={Icon1} alt="Frontend Mentor" />
+            </a>
             <a
               href="https://github.com/amay0808"
               target="_blank"
               rel="noopener noreferrer"
-            ></a>
-            <img src={Icon2} alt="Github" />
+            >
+              <img src={Icon2} alt="Github" />
+            </a>
             <a
               href="https://twitter.com/amay0808"
               target="_blank"
               rel="noopener noreferrer"
-            ></a>
-            <img src={Icon3} alt="Twitter" />
+            >
+              <img src={Icon3} alt="Twitter" />
+            </a>
             <a
-              href="www.linkedin.com/in/adrianmayfield"
+              href="https://www.linkedin.com/in/adrianmayfield"
               target="_blank"
               rel="noopener noreferrer"
-            ></a>
-            <img src={Icon4} alt="Linkedin" />
+            >
+              <img src={Icon4} alt="Linkedin" />
+            </a>
           </div>
           <div>
             <div>
