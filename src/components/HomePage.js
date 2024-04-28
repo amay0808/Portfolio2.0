@@ -2,15 +2,20 @@ import React from "react";
 import "../components/HomePage.css";
 import PatternRings from "../assets/images/pattern-rings.svg";
 import ProfilePic from "../assets/images/profile-pic.webp";
+import PatternCircle from "../assets/images/pattern-circle.svg";
+import Icon1 from "../assets/images/icon-frontend-mentor.svg";
+import Icon2 from "../assets/images/icon-github.svg";
+import Icon3 from "../assets/images/icon-twitter.svg";
+import Icon4 from "../assets/images/icon-linkedin.svg";
 function HomePage() {
   return (
     <div>
       <p id="my-name">adrianmayfield</p>
       <div className="intro-section">
+        <div classname="rings">
+          <img src={PatternRings} alt="rings" className="rings-image" />
+        </div>
         <div className="bio">
-          <div classname="rings">
-            <img src={PatternRings} alt="rings" className="rings-image" />
-          </div>
           <p id="greetings">Nice to meet you!</p>
           <p>
             I'm
@@ -25,7 +30,41 @@ function HomePage() {
           <button id="contact-btn">CONTACT ME</button>
         </div>
         <div className="bio-section">
+          <div className="social-icons">
+            <a
+              href="https://www.frontendmentor.io/profile/amay0808"
+              target="_blank"
+              rel="frontendmentor"
+            ></a>
+
+            <img src={Icon1} alt="Frontend Mentor" />
+            <a
+              href="https://github.com/amay0808"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
+            <img src={Icon2} alt="Github" />
+            <a
+              href="https://twitter.com/amay0808"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
+            <img src={Icon3} alt="Twitter" />
+            <a
+              href="www.linkedin.com/in/adrianmayfield"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
+            <img src={Icon4} alt="Linkedin" />
+          </div>
           <div>
+            <div>
+              <img
+                src={PatternCircle}
+                alt="Circle"
+                className="pattern-circle"
+              />
+            </div>
             <img src={ProfilePic} alt="Profile" className="profile-image" />
           </div>
         </div>
