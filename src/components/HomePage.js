@@ -156,11 +156,4 @@ function HomePage() {
             Message
             <textarea name="message"></textarea>
           </label>
-          <input type="submit" value="Send message" />
-        </form>
-      </section>
-    </div>
-  );
-}
-
-export default HomePage;
+          <input type="submit" value="Send messag
