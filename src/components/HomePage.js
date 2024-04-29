@@ -112,10 +112,10 @@ function HomePage() {
         </ul>
       </section>
       <section className="projects-section">
-        <h2 className="projects-tittle">Projects</h2>
         <div>
           <button className="contact-btn-projects">CONTACT ME</button>
         </div>
+        <h2 className="projects-tittle">Projects</h2>
         <ul className="projects-list">
           <li className="project-item">
             <img
