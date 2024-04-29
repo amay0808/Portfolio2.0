@@ -46,6 +46,11 @@ body {
   margin-top: 200px; /* Adjust this value as needed */
   width: 1110px;
 }
+.projects-tittle {
+  font-size: 88px;
+  line-height: 88px;
+  font-family: "Space Grotesk Bold", Arial, sans-serif;
+}
 
 .projects-list {
   font-size: 48px;
@@ -170,8 +175,6 @@ body {
 
 .skills-list {
   border-top: white 1px solid;
-  font-size: 48px;
-  line-height: 56px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -180,7 +183,15 @@ body {
   padding: 0;
   margin-top: 104px;
 }
+.skill-item h3 {
+  font-size: 48px;
+  line-height: 56px;
+}
 
+.skill-item p {
+  font-size: 18px;
+  line-height: 28px;
+}
 .skills-list li {
   display: flex;
   flex-direction: column;

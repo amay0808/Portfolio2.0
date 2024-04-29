@@ -116,7 +116,7 @@ function HomePage() {
         </ul>
       </section>
       <section className="projects-section">
-        <h2>Projects</h2>
+        <h2 className="projects-tittle">Projects</h2>
         <ul className="projects-list">
           <li className="project-item">
             <img
