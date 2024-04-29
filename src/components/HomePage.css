@@ -37,7 +37,7 @@ body {
   width: 192.49px;
   display: flex;
   justify-content: space-between;
-  right: 223px;
+  margin-left: 223px;
   margin-top: 43px;
   filter: invert(1);
   cursor: pointer;
