@@ -91,7 +91,7 @@ function HomePage() {
             <p>2 Years Experience</p>
           </li>
           <li className="skill-item">
-            <h3>Node</h3>
+            <h3>Node.JS</h3>
             <p>2 Years Experience</p>
           </li>
           <li className="skill-item">
@@ -106,39 +106,53 @@ function HomePage() {
             <h3>Python</h3>
             <p>1 Years Experience</p>
           </li>
+          <div classname="rings">
+            <img
+              src={PatternRings}
+              alt="rings"
+              className="skills-rings-image"
+            />
+          </div>
         </ul>
       </section>
-      <section className="projects">
+      <section className="projects-section">
         <h2>Projects</h2>
-        <img
-          src={require("../assets/images/project-around-the-us.png")}
-          alt="Project thumbnail"
-          className="project-image"
-        />
-        <li>Around the U.S</li>
-        <p>HTML CSS JavaScript</p>
-        <button>View project</button>
-        <button>View code</button>
-        <img
-          src={require("../assets/images/project-around-the-us.png")}
-          alt="Project thumbnail"
-          className="project-image"
-        />
-        <li>Around the U.S </li>
-        <p>HTML CSS JavaScript</p>
-        <button>View project</button>
-        <button>View code</button>
-        <img
-          src={require("../assets/images/project-around-the-us.png")}
-          alt="Project thumbnail"
-          className="project-image"
-        />
-        <li>Around the U.S </li>
-        <p>HTML CSS JavaScript</p>
-        <button>View project</button>
-        <button>View code</button>
+        <ul className="projects-list">
+          <li className="project-item">
+            <img
+              src={require("../assets/images/project-around-the-us.png")}
+              alt="Project thumbnail"
+              className="project-image"
+            />
+            <h3>Around the U.S</h3>
+            <p>HTML CSS JavaScript</p>
+            <button>View project</button>
+            <button>View code</button>
+          </li>
+          <li className="project-item">
+            <img
+              src={require("../assets/images/project-around-the-us.png")}
+              alt="Project thumbnail"
+              className="project-image"
+            />
+            <h3>Around the U.S </h3>
+            <p>HTML CSS JavaScript</p>
+            <button>View project</button>
+            <button>View code</button>
+          </li>
+          <li className="project-item">
+            <img
+              src={require("../assets/images/project-around-the-us.png")}
+              alt="Project thumbnail"
+              className="project-image"
+            />
+            <h3>Around the U.S </h3>
+            <p>HTML CSS JavaScript</p>
+            <button>View project</button>
+            <button>View code</button>
+          </li>
+        </ul>
       </section>
-
       <section className="contact">
         <h2>Contact</h2>
         <p>
