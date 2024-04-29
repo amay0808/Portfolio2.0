@@ -100,6 +100,8 @@ body {
   transform: translate(-50%);
 }
 .skills-list {
+  font-size: 48px;
+  line-height: 56px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);

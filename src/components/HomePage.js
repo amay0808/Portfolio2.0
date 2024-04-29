@@ -73,7 +73,6 @@ function HomePage() {
         </div>
       </div>
       <section className="skills-section">
-        <h2>Skills</h2>
         <ul className="skills-list">
           <li className="skill-item">
             <h3>HTML</h3>
