@@ -26,6 +26,7 @@ body {
 .skills-rings-image {
   position: absolute;
   margin-left: 1149px;
+  margin-top: 300px;
 }
 
 .project-image {
@@ -50,6 +51,25 @@ body {
   font-size: 88px;
   line-height: 88px;
   font-family: "Space Grotesk Bold", Arial, sans-serif;
+}
+.contact-btn-projects {
+  position: absolute;
+  font-family: "Space Grotesk Bold", Arial, sans-serif;
+  color: white;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 2.29px;
+  padding-bottom: 12px;
+  border-bottom: #4ee1a0 2px solid;
+  margin-left: 990px;
+  margin-top: 0;
+}
+
+.contact-btn-projects:hover {
+  color: #4ee1a0;
 }
 
 .projects-list {

@@ -73,6 +73,9 @@ function HomePage() {
         </div>
       </div>
       <section className="skills-section">
+        <div classname="rings">
+          <img src={PatternRings} alt="rings" className="skills-rings-image" />
+        </div>
         <ul className="skills-list">
           <li className="skill-item">
             <h3>HTML</h3>
@@ -106,17 +109,13 @@ function HomePage() {
             <h3>Python</h3>
             <p>1 Years Experience</p>
           </li>
-          <div classname="rings">
-            <img
-              src={PatternRings}
-              alt="rings"
-              className="skills-rings-image"
-            />
-          </div>
         </ul>
       </section>
       <section className="projects-section">
         <h2 className="projects-tittle">Projects</h2>
+        <div>
+          <button className="contact-btn-projects">CONTACT ME</button>
+        </div>
         <ul className="projects-list">
           <li className="project-item">
             <img
