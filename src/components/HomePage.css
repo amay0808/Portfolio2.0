@@ -135,7 +135,7 @@ body {
 
 .view-code-btn {
   top: calc(50% + 24px); /* Adjust the position of the buttons */
-  padding-top: 48px;
+  margin-top: 48px;
 }
 
 .project-item .project-image-wrapper::before {

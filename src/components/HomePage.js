@@ -7,6 +7,10 @@ import Icon1 from "../assets/images/icon-frontend-mentor.svg";
 import Icon2 from "../assets/images/icon-github.svg";
 import Icon3 from "../assets/images/icon-twitter.svg";
 import Icon4 from "../assets/images/icon-linkedin.svg";
+import Project1 from "../assets/images/project1.png";
+import Project2 from "../assets/images/project2.png";
+import Project3 from "../assets/images/project3.png";
+import Project4 from "../assets/images/project4.png";
 function HomePage() {
   return (
     <div>
@@ -120,25 +124,33 @@ function HomePage() {
           <li className="project-item">
             <div className="project-image-wrapper">
               <img
-                src={require("../assets/images/project-around-the-us.png")}
+                src={Project1}
                 alt="Project thumbnail"
                 className="project-image"
               />
-              <button className="view-project-btn">View project</button>
-              <button className="view-code-btn">View code</button>
+              <a href="http://synthesis-workshop.com.s3-website-us-east-1.amazonaws.com/">
+                <button className="view-project-btn">View project</button>
+              </a>
+              <a href="https://github.com/synthesis-workshop/frontend.git">
+                <button className="view-code-btn">View code</button>
+              </a>
             </div>
-            <h3>Around the U.S</h3>
+            <h3>Project Synthesis</h3>
             <p>HTML CSS JavaScript</p>
           </li>
           <li className="project-item">
             <div className="project-image-wrapper">
               <img
-                src={require("../assets/images/project-around-the-us.png")}
+                src={Project2}
                 alt="Project thumbnail"
                 className="project-image"
               />
-              <button className="view-project-btn">View project</button>
-              <button className="view-code-btn">View code</button>
+              <a href="https://amay0808.github.io/se_project_aroundtheus/">
+                <button className="view-project-btn">View project</button>
+              </a>
+              <a href="https://github.com/amay0808/se_project_aroundtheus.git">
+                <button className="view-code-btn">View code</button>
+              </a>
             </div>
             <h3>Around the U.S </h3>
             <p>HTML CSS JavaScript</p>
@@ -146,14 +158,35 @@ function HomePage() {
           <li className="project-item">
             <div className="project-image-wrapper">
               <img
-                src={require("../assets/images/project-around-the-us.png")}
+                src={Project3}
+                alt="Project thumbnail"
+                className="project-image"
+              ></img>
+              <a href="https://amay0808.github.io/se_project_coffeeshop/">
+                <button className="view-project-btn">View project</button>
+              </a>
+              <a href="https://github.com/amay0808/se_project_coffeeshop.git">
+                <button className="view-code-btn">View code</button>
+              </a>
+            </div>
+            <h3>Practicum Coffee Shop </h3>
+            <p>HTML CSS JavaScript</p>
+          </li>
+          <li className="project-item">
+            <div className="project-image-wrapper">
+              <img
+                src={Project4}
                 alt="Project thumbnail"
                 className="project-image"
               />
-              <button className="view-project-btn">View project</button>
-              <button className="view-code-btn">View code</button>
+              <a href="">
+                <button className="view-project-btn">View project</button>
+              </a>
+              <a href="">
+                <button className="view-code-btn">View code</button>
+              </a>
             </div>
-            <h3>Around the U.S </h3>
+            <h3>What to Wear (WTWR)</h3>
             <p>HTML CSS JavaScript</p>
           </li>
         </ul>
