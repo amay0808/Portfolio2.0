@@ -36,7 +36,6 @@ body {
   width: 445px;
   height: 720px;
 }
-
 /* ==============================
    PROJECTS SECTION
    ============================== */
@@ -45,11 +44,13 @@ body {
   margin-top: 137px;
   width: 1110px;
 }
+
 .projects-tittle {
   font-size: 88px;
   line-height: 88px;
   font-family: "Space Grotesk Bold", Arial, sans-serif;
 }
+
 .contact-btn-projects {
   position: absolute;
   font-family: "Space Grotesk Bold", Arial, sans-serif;
@@ -85,15 +86,22 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .projects-section h3 {
   font-size: 23px;
   line-height: 32px;
 }
+
 .projects-list p {
   font-size: 18px;
   line-height: 28px;
 }
+
 .project-item {
+  position: relative;
+}
+
+.project-item .project-image-wrapper {
   position: relative;
 }
 
@@ -107,15 +115,16 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
   transition: opacity 0.3s ease;
   background: none;
+  border: none;
   border-bottom: #4ee1a0 2px solid;
   color: white;
+  opacity: 0;
 }
 
-.project-item:hover .view-project-btn,
-.project-item:hover .view-code-btn {
+.project-item .project-image-wrapper:hover .view-project-btn,
+.project-item .project-image-wrapper:hover .view-code-btn {
   opacity: 1;
   color: #4ee1a0;
 }
@@ -126,8 +135,10 @@ body {
 
 .view-code-btn {
   top: calc(50% + 24px); /* Adjust the position of the buttons */
+  padding-top: 48px;
 }
-.project-item::before {
+
+.project-item .project-image-wrapper::before {
   content: "";
   position: absolute;
   top: 0;
@@ -137,16 +148,17 @@ body {
   background-color: rgba(36, 36, 36, 0);
   transition: background-color 0.3s ease;
 }
-.project-item:hover::before {
+
+.project-item .project-image-wrapper:hover::before {
   background-color: rgba(36, 36, 36, 0.5);
 }
-.project-item:hover .view-project-btn,
-.project-item:hover .view-code-btn {
+
+.project-item .project-image-wrapper:hover .view-project-btn,
+.project-item .project-image-wrapper:hover .view-code-btn {
   opacity: 1;
   color: #4ee1a0;
   cursor: pointer;
 }
-
 /* ==============================
    INTRO SECTION
    ============================== */
