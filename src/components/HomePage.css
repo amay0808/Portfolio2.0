@@ -5,9 +5,7 @@
 body {
   background-color: black;
   color: white;
-  padding: 165px;
-  padding-top: 0;
-  padding-bottom: 92px;
+  padding: 0 165px 92px 165px;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
@@ -44,7 +42,7 @@ body {
    ============================== */
 
 .projects-section {
-  margin-top: 137px; /* Adjust this value as needed */
+  margin-top: 137px;
   width: 1110px;
 }
 .projects-tittle {
@@ -95,6 +93,60 @@ body {
   font-size: 18px;
   line-height: 28px;
 }
+.project-item {
+  position: relative;
+}
+
+.view-project-btn,
+.view-code-btn {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2.29px;
+  padding-bottom: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: none;
+  border-bottom: #4ee1a0 2px solid;
+  color: white;
+}
+
+.project-item:hover .view-project-btn,
+.project-item:hover .view-code-btn {
+  opacity: 1;
+  color: #4ee1a0;
+}
+
+.view-project-btn {
+  top: calc(50% - 24px); /* Adjust the position of the buttons */
+}
+
+.view-code-btn {
+  top: calc(50% + 24px); /* Adjust the position of the buttons */
+}
+.project-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 36, 36, 0);
+  transition: background-color 0.3s ease;
+}
+.project-item:hover::before {
+  background-color: rgba(36, 36, 36, 0.5);
+}
+.project-item:hover .view-project-btn,
+.project-item:hover .view-code-btn {
+  opacity: 1;
+  color: #4ee1a0;
+  cursor: pointer;
+}
+
 /* ==============================
    INTRO SECTION
    ============================== */

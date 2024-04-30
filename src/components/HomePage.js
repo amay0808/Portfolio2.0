@@ -125,8 +125,8 @@ function HomePage() {
             />
             <h3>Around the U.S</h3>
             <p>HTML CSS JavaScript</p>
-            <button>View project</button>
-            <button>View code</button>
+            <button className="view-project-btn">View project</button>
+            <button className="view-code-btn">View code</button>
           </li>
           <li className="project-item">
             <img
@@ -136,8 +136,8 @@ function HomePage() {
             />
             <h3>Around the U.S </h3>
             <p>HTML CSS JavaScript</p>
-            <button>View project</button>
-            <button>View code</button>
+            <button className="view-project-btn">View project</button>
+            <button className="view-code-btn">View code</button>
           </li>
           <li className="project-item">
             <img
@@ -147,8 +147,8 @@ function HomePage() {
             />
             <h3>Around the U.S </h3>
             <p>HTML CSS JavaScript</p>
-            <button>View project</button>
-            <button>View code</button>
+            <button className="view-project-btn">View project</button>
+            <button className="view-code-btn">View code</button>
           </li>
         </ul>
       </section>
