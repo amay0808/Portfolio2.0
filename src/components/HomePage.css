@@ -3,18 +3,19 @@
    ============================== */
 
 body {
-  background-color: black;
+  background-color: #151515;
   color: white;
   padding: 0 165px 92px 165px;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Space Grotesk", Arial, sans-serif;
 }
-
 /* ==============================
    IMAGES
    ============================== */
 
 .rings-image {
+  width: 530px;
+  height: 132px;
   position: absolute;
   top: 133px;
   z-index: 1;
@@ -314,27 +315,97 @@ body {
 #contact-btn:hover {
   color: #4ee1a0;
 }
+/* ==============================
+   CONTACT SECTION
+   ============================== */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  width: 1110px;
+  padding-bottom: 92px;
+}
+.form {
+  font-family: "Space Grotesk Bold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  width: 445px;
+  height: 327px;
+  margin-top: 84px;
+  margin-left: 220px;
+}
+.bottom-page {
+  background-color: #242424;
+  display: flex;
+  border-bottom: 1px solid white;
+  padding-bottom: 92px;
+}
+.contact h2 {
+  font-size: 88px;
+  line-height: 88px;
+  font-family: "Space Grotesk Bold", Arial, sans-serif;
+}
+
+.contact p {
+  width: 445px;
+  height: 84px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: normal;
+  font-family: "Space Grotesk medium", Arial, sans-serif;
+  margin-top: 0;
+}
+.form_label {
+  display: flex;
+  flex-direction: column;
+}
+.form_input {
+  color: white;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid white;
+  margin-bottom: 32px;
+}
+.send-message-btn {
+  margin-top: 32px;
+  font-family: "Space Grotesk Bold", Arial, sans-serif;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2.29px;
+  border-bottom: #4ee1a0 2px solid;
+  margin-left: 301px;
+  cursor: pointer;
+}
+.rings-contact-image {
+  position: absolute;
+  left: -100px;
+}
+.social-icons-footer {
+  position: absolute;
+  height: 25px;
+  width: 192.49px;
+  cursor: pointer;
+  margin-top: 39px;
+  margin-left: 918px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 918px;
+}
+
 @media (max-width: 768px) {
   .intro-section {
     flex-direction: column-reverse;
   }
 }
 .profile-image {
-  margin-left: 0; /* Reset the margin on mobile view */
-}
-@media (max-width: 768px) {
-  .intro-section {
-    flex-direction: column-reverse;
-  }
-  .profile-image {
-    margin-left: 0;
-    margin-top: 0;
-  }
-  #my-name {
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: "Space Grotesk", Arial, sans-serif;
-  }
+  margin-left: 0;
 }

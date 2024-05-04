@@ -13,10 +13,10 @@ import Project3 from "../assets/images/project3.png";
 import Project4 from "../assets/images/project4.png";
 function HomePage() {
   return (
-    <div>
+    <div className="top-page">
       <p id="my-name">adrianmayfield</p>
       <div className="intro-section">
-        <div classname="rings">
+        <div className="rings">
           <img src={PatternRings} alt="rings" className="rings-image" />
         </div>
         <div className="bio">
@@ -77,7 +77,7 @@ function HomePage() {
         </div>
       </div>
       <section className="skills-section">
-        <div classname="rings">
+        <div className="rings">
           <img src={PatternRings} alt="rings" className="skills-rings-image" />
         </div>
         <ul className="skills-list">
@@ -179,10 +179,10 @@ function HomePage() {
                 alt="Project thumbnail"
                 className="project-image"
               />
-              <a href="">
+              <a href="https://amay0808.github.io/se_project_react/#/">
                 <button className="view-project-btn">View project</button>
               </a>
-              <a href="">
+              <a href="https://github.com/amay0808/se_project_react.git">
                 <button className="view-code-btn">View code</button>
               </a>
             </div>
@@ -191,28 +191,81 @@ function HomePage() {
           </li>
         </ul>
       </section>
-      <section className="contact">
-        <h2>Contact</h2>
-        <p>
-          I would love to hear about your project and how I could help. Please
-          fill in the form, and I’ll get back to you as soon as possible.
-        </p>
-        <form>
-          <label>
-            Name
-            <input type="text" name="name" />
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" />
-          </label>
-          <label>
-            Message
-            <textarea name="message"></textarea>
-          </label>
-          <input type="submit" value="Send message" />
-        </form>
-      </section>
+      <div className="bottom-page">
+        <section className="contact">
+          <div className="contact-text">
+            <h2>Contact</h2>
+            <p>
+              I would love to hear about your project and how I could help.
+              Please fill in the form, and I’ll get back to you as soon as
+              possible.
+            </p>
+            <div className="rings">
+              <img
+                src={PatternRings}
+                alt="rings"
+                className="rings-contact-image"
+              />
+            </div>
+          </div>
+          <div className="form">
+            <form>
+              <label className="form_label">
+                Name
+                <input className="form_input" type="text" name="name" />
+              </label>
+              <label className="form_label">
+                Email
+                <input className="form_input" type="email" name="email" />
+              </label>
+              <label className="form_label">
+                Message
+                <textarea className="form_input" name="message"></textarea>
+              </label>
+              <input
+                className="send-message-btn"
+                type="submit"
+                value="SEND MESSAGE"
+              />
+            </form>
+          </div>
+        </section>
+      </div>
+      <div className="footer-content">
+        <div>
+          <p id="my-name">adrianmayfield</p>
+          <div className="social-icons-footer">
+            <a
+              href="https://www.frontendmentor.io/profile/amay0808"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={Icon1} alt="Frontend Mentor" />
+            </a>
+            <a
+              href="https://github.com/amay0808"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={Icon2} alt="Github" />
+            </a>
+            <a
+              href="https://twitter.com/amay0808"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={Icon3} alt="Twitter" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/adrianmayfield"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={Icon4} alt="Linkedin" />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
