@@ -5,9 +5,15 @@
 body {
   background-color: #151515;
   color: white;
-  padding: 0 165px 92px 165px;
+  /* padding: 0 165px 92px 165px; */
   box-sizing: border-box;
   font-family: "Space Grotesk", Arial, sans-serif;
+  width: 1440px;
+  height: 3872px;
+  /* min-width: 1100px;
+  max-width: 1600px; */
+  margin: 0 auto;
+  display: flex;
 }
 /* ==============================
    IMAGES
@@ -338,7 +344,6 @@ body {
   background-color: #242424;
   display: flex;
   border-bottom: 1px solid white;
-  padding-bottom: 92px;
 }
 .contact h2 {
   font-size: 88px;
