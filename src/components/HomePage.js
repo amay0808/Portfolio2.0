@@ -16,9 +16,7 @@ function HomePage() {
     <div className="top-page">
       <p id="my-name">adrianmayfield</p>
       <div className="intro-section">
-        <div className="rings">
-          <img src={PatternRings} alt="rings" className="rings-image" />
-        </div>
+        <div className="rings-image"></div>
         <div className="bio">
           <p id="greetings">Nice to meet you!</p>
           <p>
@@ -77,9 +75,6 @@ function HomePage() {
         </div>
       </div>
       <section className="skills-section">
-        <div className="rings">
-          <img src={PatternRings} alt="rings" className="skills-rings-image" />
-        </div>
         <ul className="skills-list">
           <li className="skill-item">
             <h3>HTML</h3>
@@ -114,6 +109,7 @@ function HomePage() {
             <p>1 Years Experience</p>
           </li>
         </ul>
+        <div className="skills-rings-image"></div>
       </section>
       <section className="projects-section">
         <div>
@@ -270,4 +266,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default HomePage

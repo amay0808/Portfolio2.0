@@ -25,13 +25,21 @@ body {
   position: absolute;
   top: 133px;
   z-index: 1;
-  left: -100px;
+  margin-right: 1010px;
+  background-image: url("../assets/images/pattern-rings.svg");
+  background-repeat: no-repeat;
 }
 
 .skills-rings-image {
   position: absolute;
-  margin-left: 1149px;
-  margin-top: 300px;
+  top: 357px;
+  right: -239px;
+  width: 530px;
+  height: 132px;
+  /* margin-left: 984px; */
+  background-image: url("../assets/images/pattern-rings.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .project-image {
@@ -42,6 +50,8 @@ body {
 .profile-image {
   width: 445px;
   height: 720px;
+  object-fit: cover;
+  filter: grayscale(100%);
 }
 /* ==============================
    PROJECTS SECTION
@@ -171,9 +181,11 @@ body {
    ============================== */
 
 .intro-section {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 #greetings {
@@ -297,8 +309,10 @@ body {
 
 .skills-section {
   margin-top: 100px;
-  width: 1110px;
-  height: 327px;
+  /* width: 1110px;
+  height: 327px; */
+  position: relative;
+  overflow: hidden;
 }
 
 /* ==============================
@@ -388,28 +402,4 @@ body {
 }
 .rings-contact-image {
   position: absolute;
-  left: -100px;
-}
-.social-icons-footer {
-  position: absolute;
-  height: 25px;
-  width: 192.49px;
-  cursor: pointer;
-  margin-top: 39px;
-  margin-left: 918px;
-  display: flex;
-  justify-content: space-between;
-}
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  width: 918px;
-}
-
-@media (max-width: 768px) {
-  .intro-section {
-    flex-direction: column-reverse;
-  }
-}
-.profile-image {
-  m
+  left: -10
