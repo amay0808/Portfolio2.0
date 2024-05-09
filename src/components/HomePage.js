@@ -11,6 +11,7 @@ import Project1 from "../assets/images/project1.png";
 import Project2 from "../assets/images/project2.png";
 import Project3 from "../assets/images/project3.png";
 import Project4 from "../assets/images/project4.png";
+
 function HomePage() {
   return (
     <div className="top-page">
@@ -74,6 +75,7 @@ function HomePage() {
           </div>
         </div>
       </div>
+
       <section className="skills-section">
         <ul className="skills-list">
           <li className="skill-item">
@@ -111,6 +113,7 @@ function HomePage() {
         </ul>
         <div className="skills-rings-image"></div>
       </section>
+
       <section className="projects-section">
         <div>
           <button className="contact-btn-projects">CONTACT ME</button>
@@ -187,6 +190,7 @@ function HomePage() {
           </li>
         </ul>
       </section>
+
       <div className="bottom-page">
         <section className="contact">
           <div className="contact-text">
@@ -266,4 +270,4 @@ function HomePage() {
   );
 }
 
-export default HomePage
+export default HomePage;

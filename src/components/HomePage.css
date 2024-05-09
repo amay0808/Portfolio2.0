@@ -53,6 +53,11 @@ body {
   object-fit: cover;
   filter: grayscale(100%);
 }
+
+.rings-contact-image {
+  position: absolute;
+  left: -205px;
+}
 /* ==============================
    PROJECTS SECTION
    ============================== */
@@ -358,6 +363,11 @@ body {
   background-color: #242424;
   display: flex;
   border-bottom: 1px solid white;
+  padding-top: 84px;
+  padding-left: 165px;
+  padding-right: 165px;
+  overflow: hidden;
+  position: relative;
 }
 .contact h2 {
   font-size: 88px;
@@ -400,6 +410,28 @@ body {
   margin-left: 301px;
   cursor: pointer;
 }
-.rings-contact-image {
+
+.social-icons-footer {
   position: absolute;
-  left: -10
+  height: 25px;
+  width: 192.49px;
+  cursor: pointer;
+  margin-top: 39px;
+  margin-left: 918px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 918px;
+}
+
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column-reverse;
+  }
+}
+.profile-image {
+  margin-left: 0;
+}
