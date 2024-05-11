@@ -200,6 +200,7 @@ function HomePage() {
               Please fill in the form, and I’ll get back to you as soon as
               possible.
             </p>
+
             <div className="rings">
               <img
                 src={PatternRings}
@@ -211,16 +212,27 @@ function HomePage() {
           <div className="form">
             <form>
               <label className="form_label">
-                Name
-                <input className="form_input" type="text" name="name" />
+                <input
+                  className="form_input name-input"
+                  type="text"
+                  name="name"
+                  placeholder="NAME"
+                />
               </label>
               <label className="form_label">
-                Email
-                <input className="form_input" type="email" name="email" />
+                <input
+                  className="form_input email-input"
+                  type="email"
+                  name="email"
+                  placeholder="EMAIL"
+                />
               </label>
               <label className="form_label">
-                Message
-                <textarea className="form_input" name="message"></textarea>
+                <textarea
+                  className="form_input message-box"
+                  name="message"
+                  placeholder="MESSAGE"
+                ></textarea>
               </label>
               <input
                 className="send-message-btn"
@@ -229,42 +241,42 @@ function HomePage() {
               />
             </form>
           </div>
-        </section>
-      </div>
-      <div className="footer-content">
-        <div>
-          <p id="my-name">adrianmayfield</p>
-          <div className="social-icons-footer">
-            <a
-              href="https://www.frontendmentor.io/profile/amay0808"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={Icon1} alt="Frontend Mentor" />
-            </a>
-            <a
-              href="https://github.com/amay0808"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={Icon2} alt="Github" />
-            </a>
-            <a
-              href="https://twitter.com/amay0808"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={Icon3} alt="Twitter" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/adrianmayfield"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={Icon4} alt="Linkedin" />
-            </a>
+          <div className="wrapper">
+            <p id="my-name">adrianmayfield</p>
+            <div className="social-icons-footer">
+              <div>
+                <a
+                  href="https://www.frontendmentor.io/profile/amay0808"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={Icon1} alt="Frontend Mentor" />
+                </a>
+                <a
+                  href="https://github.com/amay0808"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={Icon2} alt="Github" />
+                </a>
+                <a
+                  href="https://twitter.com/amay0808"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={Icon3} alt="Twitter" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/adrianmayfield"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={Icon4} alt="Linkedin" />
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );

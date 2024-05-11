@@ -5,7 +5,7 @@
 body {
   background-color: #151515;
   color: white;
-  /* padding: 0 165px 92px 165px; */
+  /* padding: 0 165px 0 165px; */
   box-sizing: border-box;
   font-family: "Space Grotesk", Arial, sans-serif;
   width: 1440px;
@@ -51,12 +51,13 @@ body {
   width: 445px;
   height: 720px;
   object-fit: cover;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 
 .rings-contact-image {
   position: absolute;
   left: -205px;
+  margin-top: 32px;
 }
 /* ==============================
    PROJECTS SECTION
@@ -65,6 +66,7 @@ body {
 .projects-section {
   margin-top: 137px;
   width: 1110px;
+  margin: 0 auto;
 }
 
 .projects-tittle {
@@ -191,6 +193,8 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding-left: 118px;
+  padding-right: 165px;
 }
 
 #greetings {
@@ -216,8 +220,8 @@ body {
   align-content: center;
   font-family: "Space Grotesk Bold", Arial, sans-serif;
   font-size: 88px;
-  line-height: 88px;
-  margin-top: 134px;
+  /* line-height: 88px;
+  margin-top: 134px; */
 }
 
 .bio p {
@@ -262,18 +266,6 @@ body {
    NAME AND HIGHLIGHT
    ============================== */
 
-#my-name {
-  font-family: "Space Grotesk", Arial, sans-serif;
-  position: absolute;
-  width: 172px;
-  height: 32px;
-  font-size: 32px;
-  line-height: 32px;
-  letter-spacing: -0.44px;
-  font-weight: bold;
-  margin-top: 39px;
-}
-
 #highlight-name {
   border-bottom: 4px solid #4ee1a0;
 }
@@ -304,6 +296,7 @@ body {
 }
 
 .skill-item p {
+  color: #d9d9d9;
   font-size: 18px;
   line-height: 28px;
 }
@@ -314,6 +307,7 @@ body {
 
 .skills-section {
   margin-top: 100px;
+  padding: 0 165px 0 165px;
   /* width: 1110px;
   height: 327px; */
   position: relative;
@@ -345,27 +339,49 @@ body {
    ============================== */
 
 .contact {
+  font-family: "Space Grotesk Bold", Arial, sans-serif;
   display: flex;
-  justify-content: space-between;
+  /* flex-direction: row; */
+  /* align-items: flex-start; */
+  /* justify-content: space-between; */
   width: 1110px;
   padding-bottom: 92px;
 }
+
 .form {
-  font-family: "Space Grotesk Bold", Arial, sans-serif;
+  /* font-family: "Space Grotesk Bold", Arial, sans-serif; */
   font-size: 16px;
   line-height: 26px;
-  width: 445px;
-  height: 327px;
+  /* width: 445px; */
+  /* height: 327px; */
   margin-top: 84px;
   margin-left: 220px;
 }
+.wrapper {
+  position: relative;
+  width: 1110px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid white;
+  padding-top: 32px;
+  margin-top: 510px;
+  right: 1115px;
+}
+.message-box {
+  padding-bottom: 81px;
+}
+.email-input {
+  padding-bottom: 18px;
+}
+.name-input {
+  padding-bottom: 18px;
+}
 .bottom-page {
   background-color: #242424;
-  display: flex;
-  border-bottom: 1px solid white;
-  padding-top: 84px;
-  padding-left: 165px;
-  padding-right: 165px;
+  /* display: flex; */
+  /* border-bottom: 1px solid white; */
+  padding: 0 165px 0 165px;
   overflow: hidden;
   position: relative;
 }
@@ -411,27 +427,35 @@ body {
   cursor: pointer;
 }
 
-.social-icons-footer {
-  position: absolute;
-  height: 25px;
-  width: 192.49px;
-  cursor: pointer;
-  margin-top: 39px;
-  margin-left: 918px;
-  display: flex;
-  justify-content: space-between;
-}
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  width: 918px;
+#my-name {
+  font-family: "Space Grotesk", Arial, sans-serif;
+  /* position: absolute; */
+  width: 172px;
+  height: 32px;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.44px;
+  font-weight: bold;
+  /* margin-left: 165px; */
+  /* margin-top: 531px;
+  right: 1103px; */
 }
 
-@media (max-width: 768px) {
+.social-icons-footer {
+  /* position: absolute; */
+  /* height: 25px; */
+  width: 192.49px;
+  cursor: pointer;
+  /* margin-top: 531px;
+  display: flex; */
+  margin-left: 746px;
+}
+
+/* @media (max-width: 768px) {
   .intro-section {
     flex-direction: column-reverse;
   }
 }
 .profile-image {
   margin-left: 0;
-}
+} */
