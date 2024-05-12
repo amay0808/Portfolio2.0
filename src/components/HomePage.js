@@ -1,3 +1,4 @@
+import Form from "./Form";
 import React from "react";
 import "../components/HomePage.css";
 import PatternRings from "../assets/images/pattern-rings.svg";
@@ -30,7 +31,9 @@ function HomePage() {
               dedicated to crafting user-friendly web applications.
             </p>
           </div>
-          <button id="contact-btn">CONTACT ME</button>
+          <a href="#contact-section">
+            <button id="contact-btn">CONTACT ME</button>
+          </a>
         </div>
         <div className="bio-section">
           <div className="social-icons">
@@ -116,8 +119,11 @@ function HomePage() {
 
       <section className="projects-section">
         <div>
-          <button className="contact-btn-projects">CONTACT ME</button>
+          <a href="#contact-section">
+            <button className="contact-btn-projects">CONTACT ME</button>
+          </a>
         </div>
+
         <h2 className="projects-tittle">Projects</h2>
         <ul className="projects-list">
           <li className="project-item">
@@ -192,7 +198,7 @@ function HomePage() {
       </section>
 
       <div className="bottom-page">
-        <section className="contact">
+        <section className="contact" id="contact-section">
           <div className="contact-text">
             <h2>Contact</h2>
             <p>
