@@ -15,7 +15,7 @@ import Project4 from "../assets/images/project4.png";
 function HomePage() {
   return (
     <div className="top-page">
-      <p id="my-name">adrianmayfield</p>
+      <p className="my-name">adrianmayfield</p>
       <div className="intro-section">
         <div className="rings-image"></div>
         <div className="bio">
@@ -242,9 +242,9 @@ function HomePage() {
             </form>
           </div>
           <div className="wrapper">
-            <p id="my-name">adrianmayfield</p>
-            <div className="social-icons-footer">
-              <div>
+            <p className="name">adrianmayfield</p>
+            <div className="my-name-contact">
+              <div className="social-icons-footer">
                 <a
                   href="https://www.frontendmentor.io/profile/amay0808"
                   target="_blank"

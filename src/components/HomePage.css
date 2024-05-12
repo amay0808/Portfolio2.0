@@ -186,6 +186,17 @@ body {
 /* ==============================
    INTRO SECTION
    ============================== */
+.my-name {
+  font-family: "Space Grotesk", Arial, sans-serif;
+  position: absolute;
+  width: 172px;
+  height: 32px;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.44px;
+  font-weight: bold;
+  margin-left: 165px;
+}
 
 .intro-section {
   position: relative;
@@ -355,7 +366,7 @@ body {
   /* width: 445px; */
   /* height: 327px; */
   margin-top: 84px;
-  margin-left: 220px;
+  margin-left: 318px;
 }
 .wrapper {
   position: relative;
@@ -363,10 +374,12 @@ body {
   height: 32px;
   display: flex;
   justify-content: space-between;
+  align-items: center; /* This will vertically center the items */
   border-top: 1px solid white;
   padding-top: 32px;
   margin-top: 510px;
   right: 1115px;
+  gap: 938px;
 }
 .message-box {
   padding-bottom: 81px;
@@ -391,16 +404,14 @@ body {
   font-family: "Space Grotesk Bold", Arial, sans-serif;
 }
 
-.contact p {
-  width: 445px;
-  height: 84px;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: normal;
-  font-family: "Space Grotesk medium", Arial, sans-serif;
-  margin-top: 0;
+.name {
+  font-family: "Space Grotesk", Arial, sans-serif;
+  width: 172px;
+  height: 32px;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.44px;
+  font-weight: bold;
 }
 .form_label {
   display: flex;
@@ -427,35 +438,24 @@ body {
   cursor: pointer;
 }
 
-#my-name {
+.my-name-contact {
   font-family: "Space Grotesk", Arial, sans-serif;
-  /* position: absolute; */
-  width: 172px;
+  /* width: 172px; */
   height: 32px;
   font-size: 32px;
-  line-height: 32px;
+  /* line-height: 32px; */
   letter-spacing: -0.44px;
   font-weight: bold;
-  /* margin-left: 165px; */
-  /* margin-top: 531px;
-  right: 1103px; */
 }
 
 .social-icons-footer {
-  /* position: absolute; */
+  position: relative;
   /* height: 25px; */
+  display: flex;
+  /* justify-content: space-between; */
   width: 192.49px;
+  gap: 20px;
   cursor: pointer;
-  /* margin-top: 531px;
-  display: flex; */
-  margin-left: 746px;
+  /* margin-left: 746px; */
+  left: -160px;
 }
-
-/* @media (max-width: 768px) {
-  .intro-section {
-    flex-direction: column-reverse;
-  }
-}
-.profile-image {
-  margin-left: 0;
-} */
