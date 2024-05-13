@@ -18,15 +18,18 @@ function HomePage() {
   const [isNameInvalid, setNameInvalid] = useState(false);
   const [isEmailInvalid, setEmailInvalid] = useState(false);
   const [isFormSubmissionInvalid, setFormSubmissionInvalid] = useState(false);
-
+  const [userName, setUserName] = useState("");
+  const [email, setEmail] = useState("");
   const handleNameChange = (event) => {
     const name = event.target.value;
-    const isInvalid = !name.match(/^[A-Za-z]*$/);
+    setUserName(name);
+    const isInvalid = !name.match(/^[A-Za-z ]*$/);
     setNameInvalid(isInvalid);
   };
 
   const handleEmailChange = (event) => {
     const email = event.target.value;
+    setEmail(email); // set the email state
     if (email === "") {
       setEmailInvalid(false);
     } else {
@@ -252,7 +255,12 @@ function HomePage() {
             <form onSubmit={validateForm} noValidate>
               <label className="form_label">
                 <input
-                  className="form_input name-input"
+                  className={`form_input name-input ${
+                    isNameInvalid ? "form_input_invalid" : ""
+                  } ${
+                    !isNameInvalid && userName !== "" ? "form_input_valid" : ""
+                  }`}
+                  // className="form_input name-input"
                   type="text"
                   name="name"
                   placeholder="NAME"
@@ -268,7 +276,11 @@ function HomePage() {
               </label>
               <label className="form_label">
                 <input
-                  className="form_input email-input"
+                  className={`form_input email-input ${
+                    isEmailInvalid ? "form_input_invalid" : ""
+                  } ${
+                    !isEmailInvalid && email !== "" ? "form_input_valid" : ""
+                  }`}
                   type="email"
                   name="email"
                   placeholder="EMAIL"

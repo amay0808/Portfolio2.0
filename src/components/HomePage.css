@@ -463,8 +463,22 @@ body {
    ERROR
    ============================== */
 
+.error-icon {
+  position: absolute;
+}
+
 .error-text {
   color: red;
   font-size: 16px;
   font-family: "Space Grotesk", sans-serif;
+}
+.form_input_invalid {
+  border-bottom: 1px solid red;
+}
+.form_input_valid {
+  border-bottom: 1px solid #4ee1a0;
+}
+.form_input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #242424;
 }
