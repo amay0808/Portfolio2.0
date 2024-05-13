@@ -1,5 +1,6 @@
-import Form from "./Form";
-import React from "react";
+// import Form from "./Form";
+import React, { useState } from "react";
+// import React from "react";
 import "../components/HomePage.css";
 import PatternRings from "../assets/images/pattern-rings.svg";
 import ProfilePic from "../assets/images/profile-pic.webp";
@@ -12,8 +13,40 @@ import Project1 from "../assets/images/project1.png";
 import Project2 from "../assets/images/project2.png";
 import Project3 from "../assets/images/project3.png";
 import Project4 from "../assets/images/project4.png";
-
+import Error from "../components/Error.js";
 function HomePage() {
+  const [isNameInvalid, setNameInvalid] = useState(false);
+  const [isEmailInvalid, setEmailInvalid] = useState(false);
+  const [isFormSubmissionInvalid, setFormSubmissionInvalid] = useState(false);
+
+  const handleNameChange = (event) => {
+    const name = event.target.value;
+    const isInvalid = !name.match(/^[A-Za-z]*$/);
+    setNameInvalid(isInvalid);
+  };
+
+  const handleEmailChange = (event) => {
+    const email = event.target.value;
+    if (email === "") {
+      setEmailInvalid(false);
+    } else {
+      const isInvalid = !email.match(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/);
+      setEmailInvalid(isInvalid);
+    }
+  };
+  const validateForm = (event) => {
+    event.preventDefault();
+    const email = event.target.elements.email.value;
+    const message = event.target.elements.message.value;
+
+    if (!email || !message || !email.includes("@")) {
+      setFormSubmissionInvalid(true);
+    } else {
+      setFormSubmissionInvalid(false);
+      // submit form
+    }
+  };
+
   return (
     <div className="top-page">
       <p className="my-name">adrianmayfield</p>
@@ -216,13 +249,21 @@ function HomePage() {
             </div>
           </div>
           <div className="form">
-            <form>
+            <form onSubmit={validateForm} noValidate>
               <label className="form_label">
                 <input
                   className="form_input name-input"
                   type="text"
                   name="name"
                   placeholder="NAME"
+                  required
+                  pattern="[A-Za-z]*"
+                  onChange={handleNameChange}
+                />
+                <Error show={isNameInvalid} message="Invalid character input" />
+                <Error
+                  show={isFormSubmissionInvalid}
+                  message="Form submission error"
                 />
               </label>
               <label className="form_label">
@@ -231,6 +272,17 @@ function HomePage() {
                   type="email"
                   name="email"
                   placeholder="EMAIL"
+                  required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  onChange={handleEmailChange}
+                />
+                <Error
+                  show={isEmailInvalid}
+                  message="Invalid character input"
+                />
+                <Error
+                  show={isFormSubmissionInvalid}
+                  message="Form submission error"
                 />
               </label>
               <label className="form_label">
@@ -238,6 +290,7 @@ function HomePage() {
                   className="form_input message-box"
                   name="message"
                   placeholder="MESSAGE"
+                  required
                 ></textarea>
               </label>
               <input

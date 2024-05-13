@@ -459,3 +459,12 @@ body {
   /* margin-left: 746px; */
   left: -160px;
 }
+/* ==============================
+   ERROR
+   ============================== */
+
+.error-text {
+  color: red;
+  font-size: 16px;
+  font-family: "Space Grotesk", sans-serif;
+}
