@@ -1,6 +1,4 @@
-// import Form from "./Form";
 import React, { useState } from "react";
-// import React from "react";
 import "../components/HomePage.css";
 import PatternRings from "../assets/images/pattern-rings.svg";
 import ProfilePic from "../assets/images/profile-pic.webp";
@@ -254,7 +252,7 @@ function HomePage() {
           <div className="form">
             <form onSubmit={validateForm} noValidate>
               <label className="form_label">
-                <input
+                <input 
                   className={`form_input name-input ${
                     isNameInvalid ? "form_input_invalid" : ""
                   } ${
