@@ -5,13 +5,10 @@
 body {
   background-color: #151515;
   color: white;
-  /* padding: 0 165px 0 165px; */
   box-sizing: border-box;
   font-family: "Space Grotesk", Arial, sans-serif;
   width: 1440px;
   height: 3872px;
-  /* min-width: 1100px;
-  max-width: 1600px; */
   margin: 0 auto;
   display: flex;
 }
@@ -36,7 +33,6 @@ body {
   right: -239px;
   width: 530px;
   height: 132px;
-  /* margin-left: 984px; */
   background-image: url("../assets/images/pattern-rings.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -51,7 +47,6 @@ body {
   width: 445px;
   height: 720px;
   object-fit: cover;
-  /* filter: grayscale(100%); */
 }
 
 .rings-contact-image {
@@ -154,11 +149,11 @@ body {
 }
 
 .view-project-btn {
-  top: calc(50% - 24px); /* Adjust the position of the buttons */
+  top: calc(50% - 24px);
 }
 
 .view-code-btn {
-  top: calc(50% + 24px); /* Adjust the position of the buttons */
+  top: calc(50% + 24px);
   margin-top: 48px;
 }
 
@@ -231,12 +226,10 @@ body {
   align-content: center;
   font-family: "Space Grotesk Bold", Arial, sans-serif;
   font-size: 88px;
-  /* line-height: 88px;
-  margin-top: 134px; */
 }
 
 .bio p {
-  margin: 0; /* remove default margin */
+  margin: 0;
 }
 
 .bio-details {
@@ -319,8 +312,6 @@ body {
 .skills-section {
   margin-top: 100px;
   padding: 0 165px 0 165px;
-  /* width: 1110px;
-  height: 327px; */
   position: relative;
   overflow: hidden;
 }
@@ -352,19 +343,13 @@ body {
 .contact {
   font-family: "Space Grotesk Bold", Arial, sans-serif;
   display: flex;
-  /* flex-direction: row; */
-  /* align-items: flex-start; */
-  /* justify-content: space-between; */
   width: 1110px;
   padding-bottom: 92px;
 }
 
 .form {
-  /* font-family: "Space Grotesk Bold", Arial, sans-serif; */
   font-size: 16px;
   line-height: 26px;
-  /* width: 445px; */
-  /* height: 327px; */
   margin-top: 84px;
   margin-left: 318px;
 }
@@ -374,7 +359,7 @@ body {
   height: 32px;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* This will vertically center the items */
+  align-items: center;
   border-top: 1px solid white;
   padding-top: 32px;
   margin-top: 510px;
@@ -392,8 +377,6 @@ body {
 }
 .bottom-page {
   background-color: #242424;
-  /* display: flex; */
-  /* border-bottom: 1px solid white; */
   padding: 0 165px 0 165px;
   overflow: hidden;
   position: relative;
@@ -440,23 +423,18 @@ body {
 
 .my-name-contact {
   font-family: "Space Grotesk", Arial, sans-serif;
-  /* width: 172px; */
   height: 32px;
   font-size: 32px;
-  /* line-height: 32px; */
   letter-spacing: -0.44px;
   font-weight: bold;
 }
 
 .social-icons-footer {
   position: relative;
-  /* height: 25px; */
   display: flex;
-  /* justify-content: space-between; */
   width: 192.49px;
   gap: 20px;
   cursor: pointer;
-  /* margin-left: 746px; */
   left: -160px;
 }
 /* ==============================
