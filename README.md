@@ -7,7 +7,7 @@ This project is based on a design challenge from Frontend Mentor. The design pro
 ## My Contributions
 
 - Implemented the entire frontend using React.
-- Enhanced the design with additional interactive features such as implementing formspree for form submission.
+- implemented formspree for form submission.
 
 ## Attribution
 
