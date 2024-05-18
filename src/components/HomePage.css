@@ -25,6 +25,7 @@ body {
   margin-right: 1010px;
   background-image: url("../assets/images/pattern-rings.svg");
   background-repeat: no-repeat;
+  top: 68px;
 }
 
 .skills-rings-image {
