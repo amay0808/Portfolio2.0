@@ -46,13 +46,13 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="form">
+    <div className="form__container">
       <form onSubmit={validateForm} noValidate>
-        <label className="form_label">
+        <label className="form__label">
           <input
-            className={`form_input name-input ${
-              isNameInvalid ? "form_input_invalid" : ""
-            } ${!isNameInvalid && userName !== "" ? "form_input_valid" : ""}`}
+            className={`form__input form__input--name ${
+              isNameInvalid ? "form__input--invalid" : ""
+            } ${!isNameInvalid && userName !== "" ? "form__input--valid" : ""}`}
             type="text"
             name="name"
             placeholder="NAME"
@@ -62,11 +62,11 @@ const ContactForm = () => {
           />
           <Error show={isNameInvalid} message="Invalid character input" />
         </label>
-        <label className="form_label">
+        <label className="form__label">
           <input
-            className={`form_input email-input ${
-              isEmailInvalid ? "form_input_invalid" : ""
-            } ${!isEmailInvalid && email !== "" ? "form_input_valid" : ""}`}
+            className={`form__input form__input--email ${
+              isEmailInvalid ? "form__input--invalid" : ""
+            } ${!isEmailInvalid && email !== "" ? "form__input--valid" : ""}`}
             type="email"
             name="email"
             placeholder="EMAIL"
@@ -76,9 +76,9 @@ const ContactForm = () => {
           />
           <Error show={isEmailInvalid} message="Invalid email input" />
         </label>
-        <label className="form_label">
+        <label className="form__label">
           <textarea
-            className="form_input message-box"
+            className="form__input form__input--message-box"
             name="message"
             placeholder="MESSAGE"
             required
@@ -86,7 +86,7 @@ const ContactForm = () => {
         </label>
         <Error show={isFormSubmissionInvalid} message="Form submission error" />
         <input
-          className="send-message-btn"
+          className="form__submit-btn"
           type="submit"
           value="SEND MESSAGE"
           disabled={state.submitting}

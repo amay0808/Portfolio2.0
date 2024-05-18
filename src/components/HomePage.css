@@ -39,7 +39,7 @@ body {
   background-position: center;
 }
 
-.project-image {
+.projects__image {
   width: 540px;
   height: 400px;
 }
@@ -50,7 +50,7 @@ body {
   object-fit: cover;
 }
 
-.rings-contact-image {
+.contact-section__rings-image {
   position: absolute;
   left: -205px;
   margin-top: 32px;
@@ -65,7 +65,7 @@ body {
   margin: 0 auto;
 }
 
-.projects-tittle {
+.projects__tittle {
   font-size: 88px;
   line-height: 88px;
   font-family: "Space Grotesk Bold", Arial, sans-serif;
@@ -91,8 +91,8 @@ body {
   color: #4ee1a0;
 }
 
-.projects-list {
-  font-size: 48px;
+.projects__list {
+  font-size: 24px;
   line-height: 56px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -117,16 +117,16 @@ body {
   line-height: 28px;
 }
 
-.project-item {
+.projects__item {
   position: relative;
 }
 
-.project-item .project-image-wrapper {
+.projects__item .projects__image-wrapper {
   position: relative;
 }
 
-.view-project-btn,
-.view-code-btn {
+.projects__view-btn,
+.projects__code-btn {
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 2.29px;
@@ -143,22 +143,22 @@ body {
   opacity: 0;
 }
 
-.project-item .project-image-wrapper:hover .view-project-btn,
-.project-item .project-image-wrapper:hover .view-code-btn {
+.projects__item .projects__image-wrapper:hover .projects__view-btn,
+.projects_item .projects__image-wrapper:hover .projects__code-btn {
   opacity: 1;
   color: #4ee1a0;
 }
 
-.view-project-btn {
+.projects__view-btn {
   top: calc(50% - 24px);
 }
 
-.view-code-btn {
+.projects__code-btn {
   top: calc(50% + 24px);
   margin-top: 48px;
 }
 
-.project-item .project-image-wrapper::before {
+.projects__item .projects__image-wrapper::before {
   content: "";
   position: absolute;
   top: 0;
@@ -169,12 +169,12 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.project-item .project-image-wrapper:hover::before {
+.projects__item .projects__image-wrapper:hover::before {
   background-color: rgba(36, 36, 36, 0.5);
 }
 
-.project-item .project-image-wrapper:hover .view-project-btn,
-.project-item .project-image-wrapper:hover .view-code-btn {
+.projects__item .projects__image-wrapper:hover .projects__view-btn,
+.projects__item .projects__image-wrapper:hover .projects__code-btn {
   opacity: 1;
   color: #4ee1a0;
   cursor: pointer;
@@ -337,23 +337,31 @@ body {
 #contact-btn:hover {
   color: #4ee1a0;
 }
+
 /* ==============================
    CONTACT SECTION
    ============================== */
 
-.contact {
+.contact-section {
   font-family: "Space Grotesk Bold", Arial, sans-serif;
   display: flex;
   width: 1110px;
-  padding-bottom: 92px;
+  /* padding-bottom: 92px;
+  margin-top: 84px;
+  margin-left: 318px; */
 }
-
+/* 
 .form {
   font-size: 16px;
   line-height: 26px;
   margin-top: 84px;
   margin-left: 318px;
+} */
+.form__container {
+  margin-top: 84px;
+  margin-left: 220px;
 }
+
 .wrapper {
   position: relative;
   width: 1110px;
@@ -378,11 +386,11 @@ body {
 }
 .bottom-page {
   background-color: #242424;
-  padding: 0 165px 0 165px;
+  padding: 0 165px 0;
   overflow: hidden;
   position: relative;
 }
-.contact h2 {
+.contact-section__title {
   font-size: 88px;
   line-height: 88px;
   font-family: "Space Grotesk Bold", Arial, sans-serif;
@@ -397,18 +405,20 @@ body {
   letter-spacing: -0.44px;
   font-weight: bold;
 }
-.form_label {
+.form__label {
   display: flex;
   flex-direction: column;
 }
-.form_input {
+.form__input {
   color: white;
   border: none;
   background: transparent;
   border-bottom: 1px solid white;
   margin-bottom: 32px;
+  border-top: 16px;
 }
-.send-message-btn {
+
+.form__submit-btn {
   margin-top: 32px;
   font-family: "Space Grotesk Bold", Arial, sans-serif;
   background: none;
@@ -438,6 +448,16 @@ body {
   cursor: pointer;
   left: -160px;
 }
+.contact-section__text {
+  width: 50%;
+}
+
+.contact-section__description {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: "Space Grotesk", Arial, sans-serif;
+}
+
 /* ==============================
    ERROR
    ============================== */
@@ -460,13 +480,13 @@ body {
   font-size: 16px;
   font-family: "Space Grotesk", sans-serif;
 }
-.form_input_invalid {
+.form__input--invalid {
   border-bottom: 1px solid red;
 }
-.form_input_valid {
+.form__input--valid {
   border-bottom: 1px solid #4ee1a0;
 }
-.form_input:focus {
+.form__input:focus {
   outline: none;
   box-shadow: 0 0 0 2px #242424;
 }

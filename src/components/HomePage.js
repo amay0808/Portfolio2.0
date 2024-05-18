@@ -127,71 +127,71 @@ function HomePage() {
           </a>
         </div>
 
-        <h2 className="projects-tittle">Projects</h2>
-        <ul className="projects-list">
-          <li className="project-item">
-            <div className="project-image-wrapper">
+        <h2 className="projects__tittle">Projects</h2>
+        <ul className="projects__list">
+          <li className="projects__item">
+            <div className="projects__image-wrapper">
               <img
                 src={Project1}
                 alt="Project thumbnail"
-                className="project-image"
+                className="projects__image"
               />
               <a href="http://synthesis-workshop.com.s3-website-us-east-1.amazonaws.com/">
-                <button className="view-project-btn">View project</button>
+                <button className="projects__view-btn">View project</button>
               </a>
               <a href="https://github.com/synthesis-workshop/frontend.git">
-                <button className="view-code-btn">View code</button>
+                <button className="projects__code-btn">View code</button>
               </a>
             </div>
             <h3>Project Synthesis</h3>
             <p>HTML CSS JavaScript</p>
           </li>
-          <li className="project-item">
-            <div className="project-image-wrapper">
+          <li className="projects__item">
+            <div className="projects__image-wrapper">
               <img
                 src={Project2}
                 alt="Project thumbnail"
-                className="project-image"
+                className="projects__image"
               />
               <a href="https://amay0808.github.io/se_project_aroundtheus/">
-                <button className="view-project-btn">View project</button>
+                <button className="projects__view-btn">View project</button>
               </a>
               <a href="https://github.com/amay0808/se_project_aroundtheus.git">
-                <button className="view-code-btn">View code</button>
+                <button className="projects__code-btn">View code</button>
               </a>
             </div>
             <h3>Around the U.S </h3>
             <p>HTML CSS JavaScript</p>
           </li>
-          <li className="project-item">
-            <div className="project-image-wrapper">
+          <li className="projects__item">
+            <div className="projects__image-wrapper">
               <img
                 src={Project3}
                 alt="Project thumbnail"
-                className="project-image"
+                className="projects__image"
               ></img>
               <a href="https://amay0808.github.io/se_project_coffeeshop/">
-                <button className="view-project-btn">View project</button>
+                <button className="projects__view-btn">View project</button>
               </a>
               <a href="https://github.com/amay0808/se_project_coffeeshop.git">
-                <button className="view-code-btn">View code</button>
+                <button className="projects__code-btn">View code</button>
               </a>
             </div>
             <h3>Practicum Coffee Shop </h3>
             <p>HTML CSS JavaScript</p>
           </li>
-          <li className="project-item">
-            <div className="project-image-wrapper">
+          <li className="projects__item">
+            <div className="projects__image-wrapper">
               <img
                 src={Project4}
                 alt="Project thumbnail"
-                className="project-image"
+                className="projects__image"
               />
               <a href="https://amay0808.github.io/se_project_react/#/">
-                <button className="view-project-btn">View project</button>
+                <button className="projects__view-btn">View project</button>
               </a>
               <a href="https://github.com/amay0808/se_project_react.git">
-                <button className="view-code-btn">View code</button>
+                <button className="projects__code-btn">View code</button>
               </a>
             </div>
             <h3>What to Wear (WTWR)</h3>
@@ -201,24 +201,59 @@ function HomePage() {
       </section>
 
       <div className="bottom-page">
-        <section className="contact" id="contact-section">
-          <div className="contact-text">
-            <h2>Contact</h2>
-            <p>
+        <section className="contact-section">
+          <div className="contact-section__text">
+            <h2 className="contact-section__title">Contact</h2>
+            <p className="contact-section__description">
               I would love to hear about your project and how I could help.
               Please fill in the form, and I’ll get back to you as soon as
               possible.
             </p>
 
-            <div className="rings">
+            <div className="contact-section__rings">
               <img
                 src={PatternRings}
                 alt="rings"
-                className="rings-contact-image"
+                className="contact-section__rings-image"
               />
             </div>
           </div>
           <ContactForm />
+          <div className="wrapper">
+            <p className="name">adrianmayfield</p>
+            <div className="my-name-contact">
+              <div className="social-icons-footer">
+                <a
+                  href="https://www.frontendmentor.io/profile/amay0808"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={Icon1} alt="Frontend Mentor" />
+                </a>
+                <a
+                  href="https://github.com/amay0808"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={Icon2} alt="Github" />
+                </a>
+                <a
+                  href="https://twitter.com/amay0808"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={Icon3} alt="Twitter" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/adrianmayfield"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={Icon4} alt="Linkedin" />
+                </a>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
