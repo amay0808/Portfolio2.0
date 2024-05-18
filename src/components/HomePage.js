@@ -14,27 +14,27 @@ import Project4 from "../assets/images/project4.png";
 
 function HomePage() {
   return (
-    <div className="top-page">
-      <p className="my-name">adrianmayfield</p>
-      <div className="intro-section">
-        <div className="rings-image"></div>
-        <div className="bio">
-          <p id="greetings">Nice to meet you!</p>
+    <div className="homepage">
+      <p className="homepage__name">adrianmayfield</p>
+      <div className="intro">
+        <div className="intro__rings-image"></div>
+        <div className="intro__bio">
+          <p className="intro__greetings">Nice to meet you!</p>
           <p>
             I'm
-            <span id="highlight-name"> Adrian.</span>
+            <span className="intro__highlight-name"> Adrian.</span>
           </p>
-          <div className="bio-details">
-            <p id="description">
+          <div className="intro__details">
+            <p className="intro__description">
               Based in California's Central Valley, I'm a FullStack Developer
               dedicated to crafting user-friendly web applications.
             </p>
           </div>
           <a href="#contact-section">
-            <button id="contact-btn">CONTACT ME</button>
+            <button className="intro__contact-btn">CONTACT ME</button>
           </a>
         </div>
-        <div className="bio-section">
+        <div className="intro__bio-section">
           <div className="social-icons">
             <a
               href="https://www.frontendmentor.io/profile/amay0808"
@@ -70,56 +70,60 @@ function HomePage() {
               <img
                 src={PatternCircle}
                 alt="Circle"
-                className="pattern-circle"
+                className="intro__pattern-circle"
               />
             </div>
-            <img src={ProfilePic} alt="Profile" className="profile-image" />
+            <img
+              src={ProfilePic}
+              alt="Profile"
+              className="intro__profile-image"
+            />
           </div>
         </div>
       </div>
 
-      <section className="skills-section">
-        <ul className="skills-list">
-          <li className="skill-item">
+      <section className="skills">
+        <ul className="skills__list">
+          <li className="skill__item">
             <h3>HTML</h3>
             <p>2 Years Experience</p>
           </li>
-          <li className="skill-item">
+          <li className="skill__item">
             <h3>CSS</h3>
             <p>2 Years Experience</p>
           </li>
-          <li className="skill-item">
+          <li className="skill__item">
             <h3>JavaScript</h3>
             <p>2 Years Experience</p>
           </li>
-          <li className="skill-item">
+          <li className="skill__item">
             <h3>React</h3>
             <p>2 Years Experience</p>
           </li>
-          <li className="skill-item">
+          <li className="skill__item">
             <h3>Node.JS</h3>
             <p>2 Years Experience</p>
           </li>
-          <li className="skill-item">
+          <li className="skill__item">
             <h3>MongoDB</h3>
             <p>2 Years Experience</p>
           </li>
-          <li className="skill-item">
+          <li className="skill__item">
             <h3>Express</h3>
             <p>2 Years Experience</p>
           </li>
-          <li className="skill-item">
+          <li className="skill__item">
             <h3>Python</h3>
             <p>1 Years Experience</p>
           </li>
         </ul>
-        <div className="skills-rings-image"></div>
+        <div className="skills__rings-image"></div>
       </section>
 
-      <section className="projects-section">
+      <section className="projects">
         <div>
           <a href="#contact-section">
-            <button className="contact-btn-projects">CONTACT ME</button>
+            <button className="projects__contact-btn">CONTACT ME</button>
           </a>
         </div>
 

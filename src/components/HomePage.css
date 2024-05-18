@@ -16,7 +16,7 @@ body {
    IMAGES
    ============================== */
 
-.rings-image {
+.intro__rings-image {
   width: 530px;
   height: 132px;
   position: absolute;
@@ -28,7 +28,7 @@ body {
   top: 68px;
 }
 
-.skills-rings-image {
+.skills__rings-image {
   position: absolute;
   top: 357px;
   right: -239px;
@@ -44,7 +44,7 @@ body {
   height: 400px;
 }
 
-.profile-image {
+.intro__profile-image {
   width: 445px;
   height: 720px;
   object-fit: cover;
@@ -59,7 +59,7 @@ body {
    PROJECTS SECTION
    ============================== */
 
-.projects-section {
+.projects {
   margin-top: 137px;
   width: 1110px;
   margin: 0 auto;
@@ -71,7 +71,7 @@ body {
   font-family: "Space Grotesk Bold", Arial, sans-serif;
 }
 
-.contact-btn-projects {
+.projects__contact-btn {
   position: absolute;
   font-family: "Space Grotesk Bold", Arial, sans-serif;
   color: white;
@@ -182,7 +182,7 @@ body {
 /* ==============================
    INTRO SECTION
    ============================== */
-.my-name {
+.homepage__name {
   font-family: "Space Grotesk", Arial, sans-serif;
   position: absolute;
   width: 172px;
@@ -194,7 +194,7 @@ body {
   margin-left: 165px;
 }
 
-.intro-section {
+.intro {
   position: relative;
   display: flex;
   justify-content: center;
@@ -204,7 +204,7 @@ body {
   padding-right: 165px;
 }
 
-#greetings {
+.intro__greetings {
   white-space: nowrap;
 }
 
@@ -212,14 +212,14 @@ body {
    BIO SECTION
    ============================== */
 
-.bio-section {
+.intro__bio-section {
   z-index: 2;
   flex: 1;
   display: flex;
   justify-content: flex-start;
 }
 
-.bio {
+.intro__bio {
   position: relative;
   width: auto;
   height: auto;
@@ -229,17 +229,17 @@ body {
   font-size: 88px;
 }
 
-.bio p {
+.intro__bio p {
   margin: 0;
 }
 
-.bio-details {
+.intro__details {
   display: flex;
   flex-wrap: wrap;
   margin-top: 43px;
 }
 
-#description {
+.intro__description {
   width: 445px;
   height: 84px;
   display: flex;
@@ -271,7 +271,7 @@ body {
    NAME AND HIGHLIGHT
    ============================== */
 
-#highlight-name {
+.intro__highlight-name {
   border-bottom: 4px solid #4ee1a0;
 }
 
@@ -279,13 +279,13 @@ body {
    SKILLS SECTION
    ============================== */
 
-.pattern-circle {
+.intro__pattern-circle {
   position: absolute;
   top: 521px;
   transform: translate(-50%);
 }
 
-.skills-list {
+.skills__list {
   border-top: white 1px solid;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -295,12 +295,12 @@ body {
   padding: 0;
   margin-top: 104px;
 }
-.skill-item h3 {
+.skill__item h3 {
   font-size: 48px;
   line-height: 56px;
 }
 
-.skill-item p {
+.skill__item p {
   color: #d9d9d9;
   font-size: 18px;
   line-height: 28px;
@@ -310,7 +310,7 @@ body {
   flex-direction: column;
 }
 
-.skills-section {
+.skills {
   margin-top: 100px;
   padding: 0 165px 0 165px;
   position: relative;
@@ -321,7 +321,7 @@ body {
    CONTACT BUTTON
    ============================== */
 
-#contact-btn {
+.intro__contact-btn {
   font-family: "Space Grotesk Bold", Arial, sans-serif;
   color: white;
   border: none;
