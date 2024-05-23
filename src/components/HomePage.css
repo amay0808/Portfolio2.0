@@ -207,6 +207,21 @@ body {
 .intro__greetings {
   white-space: nowrap;
 }
+/* ==============================
+   SOCIAL ICONS INTRO
+   ============================== */
+
+.social-icons {
+  position: absolute;
+  height: 25px;
+  width: 192.49px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 223px;
+  margin-top: 43px;
+  filter: invert(1);
+  cursor: pointer;
+}
 
 /* ==============================
    BIO SECTION
@@ -249,22 +264,6 @@ body {
   font-weight: normal;
   font-family: "Space Grotesk medium", Arial, sans-serif;
   margin-bottom: 43px;
-}
-
-/* ==============================
-   SOCIAL ICONS
-   ============================== */
-
-.social-icons {
-  position: absolute;
-  height: 25px;
-  width: 192.49px;
-  display: flex;
-  justify-content: space-between;
-  margin-left: 223px;
-  margin-top: 43px;
-  filter: invert(1);
-  cursor: pointer;
 }
 
 /* ==============================
@@ -334,104 +333,15 @@ body {
   border-bottom: #4ee1a0 2px solid;
 }
 
-#contact-btn:hover {
+.intro__contact-btn:hover {
   color: #4ee1a0;
 }
-
+.projects__contact-btn:hover {
+  color: #4ee1a0;
+}
 /* ==============================
    CONTACT SECTION
    ============================== */
-
-.contact-section {
-  font-family: "Space Grotesk Bold", Arial, sans-serif;
-  display: flex;
-  width: 1110px;
-  /* padding-bottom: 92px;
-  margin-top: 84px;
-  margin-left: 318px; */
-}
-/* 
-.form {
-  font-size: 16px;
-  line-height: 26px;
-  margin-top: 84px;
-  margin-left: 318px;
-} */
-.form__container {
-  margin-top: 84px;
-  margin-left: 220px;
-}
-
-.wrapper {
-  position: relative;
-  width: 1218px;
-  height: 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid white;
-  padding-top: 32px;
-  padding-bottom: 92px;
-  margin-top: 540px;
-  right: 1218px;
-  gap: 1046px;
-}
-.message-box {
-  padding-bottom: 81px;
-}
-.email-input {
-  padding-bottom: 18px;
-}
-.name-input {
-  padding-bottom: 18px;
-}
-.bottom-page {
-  background-color: #242424;
-  padding: 0 165px 0;
-  overflow: hidden;
-  position: relative;
-}
-.contact-section__title {
-  font-size: 88px;
-  line-height: 88px;
-  font-family: "Space Grotesk Bold", Arial, sans-serif;
-}
-
-.name {
-  font-family: "Space Grotesk", Arial, sans-serif;
-  width: 172px;
-  height: 32px;
-  font-size: 32px;
-  line-height: 32px;
-  letter-spacing: -0.44px;
-  font-weight: bold;
-}
-.form__label {
-  display: flex;
-  flex-direction: column;
-}
-.form__input {
-  color: white;
-  border: none;
-  background: transparent;
-  border-bottom: 1px solid white;
-  margin-bottom: 32px;
-  border-top: 16px;
-}
-
-.form__submit-btn {
-  margin-top: 32px;
-  font-family: "Space Grotesk Bold", Arial, sans-serif;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 2.29px;
-  border-bottom: #4ee1a0 2px solid;
-  margin-left: 301px;
-  cursor: pointer;
-}
 
 .my-name-contact {
   font-family: "Space Grotesk", Arial, sans-serif;
@@ -444,7 +354,6 @@ body {
 .social-icons-footer {
   position: relative;
   display: flex;
-  /* width: 192.49px; */
   gap: 20px;
   cursor: pointer;
   left: -160px;
@@ -459,44 +368,8 @@ body {
   font-family: "Space Grotesk", Arial, sans-serif;
 }
 
-.form__input--name {
-  padding-bottom: 10px; /* 10px padding top and bottom, 0 padding left and right */
-}
-.form__input--email {
-  padding-bottom: 10px;
-}
-.form__input--message-box {
-  margin-top: 81px;
-}
-/* ==============================
-   ERROR
-   ============================== */
-
-.error-icon {
-  position: absolute;
-  top: -33px;
-  left: 441px;
-}
-.error-container {
+.contact-section {
+  font-family: "Space Grotesk Bold", Arial, sans-serif;
   display: flex;
-  position: relative;
-  right: 6px;
-  top: 50%;
-  transform: translateY(-78%);
-  flex-direction: row-reverse;
-}
-.error-text {
-  color: red;
-  font-size: 16px;
-  font-family: "Space Grotesk", sans-serif;
-}
-.form__input--invalid {
-  border-bottom: 1px solid red;
-}
-.form__input--valid {
-  border-bottom: 1px solid #4ee1a0;
-}
-.form__input:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #242424;
+  width: 1110px;
 }

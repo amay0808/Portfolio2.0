@@ -1,5 +1,6 @@
 import React from "react";
 import ErrorIcon from "../assets/images/group-25.svg";
+import "./Error.css";
 
 const Error = ({ show }) => {
   if (!show) {

@@ -1,0 +1,91 @@
+/* ==============================
+   CONTACT FORM STYLES
+   ============================== */
+
+.form__container {
+  margin-top: 84px;
+  margin-left: 220px;
+}
+
+.wrapper {
+  position: relative;
+  width: 1218px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid white;
+  padding-top: 32px;
+  padding-bottom: 92px;
+  margin-top: 540px;
+  right: 1218px;
+  gap: 1046px;
+}
+.message-box {
+  padding-bottom: 81px;
+}
+.email-input {
+  padding-bottom: 18px;
+}
+.name-input {
+  padding-bottom: 18px;
+}
+.bottom-page {
+  background-color: #242424;
+  padding: 0 165px 0;
+  overflow: hidden;
+  position: relative;
+}
+.contact-section__title {
+  font-size: 88px;
+  line-height: 88px;
+  font-family: "Space Grotesk Bold", Arial, sans-serif;
+}
+
+.name {
+  font-family: "Space Grotesk", Arial, sans-serif;
+  width: 172px;
+  height: 32px;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.44px;
+  font-weight: bold;
+}
+.form__label {
+  display: flex;
+  flex-direction: column;
+}
+.form__input {
+  color: white;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid white;
+  margin-bottom: 32px;
+  border-top: 16px;
+}
+
+.form__submit-btn {
+  margin-top: 32px;
+  font-family: "Space Grotesk Bold", Arial, sans-serif;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 2.29px;
+  border-bottom: #4ee1a0 2px solid;
+  margin-left: 301px;
+  cursor: pointer;
+}
+.form__input--name {
+  padding-bottom: 10px;
+}
+.form__input--email {
+  padding-bottom: 10px;
+}
+.form__input--message-box {
+  margin-top: 81px;
+}
+.form__submit-btn:hover {
+  color: #4ee1a0;
+}
