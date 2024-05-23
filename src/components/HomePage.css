@@ -25,7 +25,7 @@ body {
   margin-right: 1010px;
   background-image: url("../assets/images/pattern-rings.svg");
   background-repeat: no-repeat;
-  top: 68px;
+  top: 95px;
 }
 
 .skills__rings-image {
@@ -51,8 +51,8 @@ body {
 }
 
 .contact-section__rings-image {
-  position: absolute;
-  left: -205px;
+  position: relative;
+  left: -350px;
   margin-top: 32px;
 }
 /* ==============================
@@ -364,16 +364,17 @@ body {
 
 .wrapper {
   position: relative;
-  width: 1110px;
+  width: 1218px;
   height: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid white;
   padding-top: 32px;
-  margin-top: 510px;
-  right: 1115px;
-  gap: 938px;
+  padding-bottom: 92px;
+  margin-top: 540px;
+  right: 1218px;
+  gap: 1046px;
 }
 .message-box {
   padding-bottom: 81px;
@@ -443,7 +444,7 @@ body {
 .social-icons-footer {
   position: relative;
   display: flex;
-  width: 192.49px;
+  /* width: 192.49px; */
   gap: 20px;
   cursor: pointer;
   left: -160px;
@@ -458,6 +459,15 @@ body {
   font-family: "Space Grotesk", Arial, sans-serif;
 }
 
+.form__input--name {
+  padding-bottom: 10px; /* 10px padding top and bottom, 0 padding left and right */
+}
+.form__input--email {
+  padding-bottom: 10px;
+}
+.form__input--message-box {
+  margin-top: 81px;
+}
 /* ==============================
    ERROR
    ============================== */
