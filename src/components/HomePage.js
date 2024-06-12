@@ -201,7 +201,7 @@ function HomePage() {
       </section>
 
       <div className="bottom-page">
-        <section className="contact-section">
+        <section id="contact-section">
           <div className="contact-section__text">
             <h2 className="contact-section__title">Contact</h2>
             <p className="contact-section__description">
