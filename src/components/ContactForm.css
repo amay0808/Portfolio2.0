@@ -89,3 +89,35 @@
 .form__submit-btn:hover {
   color: #4ee1a0;
 }
+/* ==============================
+   ERROR STYLES
+   ============================== */
+
+.error-icon {
+  position: absolute;
+  top: -33px;
+  left: 441px;
+}
+.error-container {
+  display: flex;
+  position: relative;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-78%);
+  flex-direction: row-reverse;
+}
+.error-text {
+  color: red;
+  font-size: 16px;
+  font-family: "Space Grotesk", sans-serif;
+}
+.form__input--invalid {
+  border-bottom: 1px solid red;
+}
+.form__input--valid {
+  border-bottom: 1px solid #4ee1a0;
+}
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #242424;
+}
