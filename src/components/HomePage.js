@@ -26,8 +26,22 @@ function HomePage() {
           </p>
           <div className="intro__details">
             <p className="intro__description">
-              Based in California's Central Valley, I'm a FullStack Developer
-              dedicated to crafting user-friendly web applications.
+              Based in California's Central Valley, I'm a passionate FullStack
+              Developer committed to building seamless, user-friendly web
+              applications. Discover more about my journey into tech on{" "}
+              <a
+                href="http://your-hashnode-url.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "white",
+                  borderBottom: "2px solid #4ee1a0",
+                  textDecoration: "none",
+                }}
+              >
+                Hashnode
+              </a>
+              .
             </p>
           </div>
           <a href="#contact-section">

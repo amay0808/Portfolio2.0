@@ -259,7 +259,7 @@ body {
 .intro__description {
   width: 445px;
   height: 84px;
-  display: flex;
+  /* display: flex;  */
   flex-wrap: wrap;
   font-size: 18px;
   line-height: 28px;
@@ -268,6 +268,14 @@ body {
   margin-bottom: 43px;
 }
 
+.hashnode-link {
+  color: white; /* Initial color of the text */
+  border-bottom: 2px solid #4ee1a0; /* Initial color of the border */
+  text-decoration: none;
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease; /* Smooth transition for color change */
+}
 /* ==============================
    NAME AND HIGHLIGHT
    ============================== */
