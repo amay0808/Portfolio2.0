@@ -61,7 +61,7 @@ function HomePage() {
               <img src={Icon2} alt="Github" />
             </a>
             <a
-              href="https://twitter.com/amay0808"
+              href="https://x.com/CodeWithAdrian"
               target="_blank"
               rel="noopener noreferrer"
             >
