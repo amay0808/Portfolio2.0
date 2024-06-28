@@ -30,14 +30,10 @@ function HomePage() {
               Developer committed to building seamless, user-friendly web
               applications. Discover more about my journey into tech on{" "}
               <a
-                href="http://your-hashnode-url.com"
+                href="https://codewithadrian.hashnode.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{
-                  color: "white",
-                  borderBottom: "2px solid #4ee1a0",
-                  textDecoration: "none",
-                }}
+                className="hashnode-link"
               >
                 Hashnode
               </a>

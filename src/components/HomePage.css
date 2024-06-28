@@ -9,7 +9,6 @@ body {
   font-family: "Space Grotesk", Arial, sans-serif;
   width: 100%;
   max-width: 1440px;
-  /* width: 1440px; */
   height: 3872px;
   margin: 0 auto;
   display: flex;
@@ -209,6 +208,15 @@ body {
 .intro__greetings {
   white-space: nowrap;
 }
+.hashnode-link {
+  color: white; /* Default color */
+  border-bottom: "2px solid #4ee1a0";
+  text-decoration: "none";
+}
+
+.hashnode-link:hover {
+  color: #4ee1a0;
+}
 /* ==============================
    SOCIAL ICONS INTRO
    ============================== */
@@ -259,7 +267,6 @@ body {
 .intro__description {
   width: 445px;
   height: 84px;
-  /* display: flex;  */
   flex-wrap: wrap;
   font-size: 18px;
   line-height: 28px;
