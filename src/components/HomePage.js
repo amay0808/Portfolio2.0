@@ -197,7 +197,7 @@ function HomePage() {
                 alt="Project thumbnail"
                 className="projects__image"
               />
-              <a href="https://amay0808.github.io/se_project_react/#/">
+              <a href="https://www.wtwr.styledcomputing.com/#/">
                 <button className="projects__view-btn">View project</button>
               </a>
               <a href="https://github.com/amay0808/se_project_react.git">
