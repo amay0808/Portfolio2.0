@@ -4,7 +4,6 @@ import ChatBot from "react-chatbotify";
 import "./style.css"; // Updated path to the copied CSS file
 
 function App() {
-  
   const [currentStep, setCurrentStep] = useState("start");
   const flow = {
     start: {
@@ -90,6 +89,7 @@ function App() {
           currentFlow={currentFlow}
           handleUserInput={handleUserInput}
           themes={themes}
+          chatIconStyle={{ color: "green" }} // change color of chat icon
         />
         <div>
           <p>{currentFlow.message}</p>
