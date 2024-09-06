@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "postcss-color-hex-alpha": "^9.0.4",
     "react": "^18.2.0",
+    "react-chatbotify": "^2.0.0-beta.5",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1",

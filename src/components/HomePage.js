@@ -208,8 +208,45 @@ function HomePage() {
             <p>HTML CSS JavaScript</p>
           </li>
         </ul>
+        <section className="Cybersecurity">
+          <h2 className="projects__tittle">Cybersecurity</h2>
+          <ul className="skills__list">
+            <li className="skill__item">
+              <h3>SEIM</h3>
+              <p>2 Years Experience</p>
+            </li>
+            <li className="skill__item">
+              <h3>Risk Management</h3>
+              <p>2 Years Experience</p>
+            </li>
+            <li className="skill__item">
+              <h3>NIST </h3>
+              <p>2 Years Experience</p>
+            </li>
+            <li className="skill__item">
+              <h3>Wireshark</h3>
+              <p>2 Years Experience</p>
+            </li>
+            <li className="skill__item">
+              <h3>Node.JS</h3>
+              <p>2 Years Experience</p>
+            </li>
+            <li className="skill__item">
+              <h3>MongoDB</h3>
+              <p>2 Years Experience</p>
+            </li>
+            <li className="skill__item">
+              <h3>Express</h3>
+              <p>2 Years Experience</p>
+            </li>
+            <li className="skill__item">
+              <h3>Python</h3>
+              <p>1 Years Experience</p>
+            </li>
+          </ul>
+          <div className="skills__rings-image"></div>
+        </section>
       </section>
-
       <div className="bottom-page">
         <section id="contact-section">
           <div className="contact-section__text">
