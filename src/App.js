@@ -79,7 +79,6 @@ function App() {
   }
   const currentFlow = flow[currentStep];
   const themes = [{ id: "terminal", version: "0.1.0" }];
-
   return (
     <div className="App">
       <HomePage />
@@ -89,7 +88,16 @@ function App() {
           currentFlow={currentFlow}
           handleUserInput={handleUserInput}
           themes={themes}
-          chatIconStyle={{ color: "green" }} // change color of chat icon
+          styles={{
+            headerStyle: { background: "green" },
+            chatContainerStyle: { background: "green" },
+            chatIconStyle: {
+              backgroundColor: "green", // Set the background color
+              borderRadius: "50%", // Make the icon round
+              width: "50px", // Set the width
+              height: "50px", // Set the height
+            },
+          }}
         />
         <div>
           <p>{currentFlow.message}</p>
@@ -110,5 +118,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
