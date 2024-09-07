@@ -97,6 +97,10 @@ function App() {
               width: "50px", // Set the width
               height: "50px", // Set the height
             },
+            tooltipStyle: {
+              background: "green",
+              color: "white",
+            },
           }}
         />
         <div>
