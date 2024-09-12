@@ -5,9 +5,10 @@ import "./style.css"; // Updated path to the copied CSS file
 
 function App() {
   const [currentStep, setCurrentStep] = useState("start");
+
   const flow = {
     start: {
-      message: "Want to know more about my listed projects? Feel free to ask!",
+      message: "Which project would you like to know more about?",
       path: (params) => {
         const userInput = params.userInput.toLowerCase().trim();
 
@@ -72,13 +73,16 @@ function App() {
       chatDisabled: false,
     },
   };
+
   // Update the current step when user selects an option
   function handleUserInput(params) {
     const nextStep = flow[currentStep].path(params);
     setCurrentStep(nextStep);
   }
+
   const currentFlow = flow[currentStep];
   const themes = [{ id: "terminal", version: "0.1.0" }];
+
   return (
     <div className="App">
       <HomePage />
@@ -122,4 +126,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
