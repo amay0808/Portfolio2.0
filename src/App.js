@@ -5,7 +5,6 @@ import "./style.css"; // Updated path to the copied CSS file
 
 function App() {
   const [currentStep, setCurrentStep] = useState("start");
-
   const flow = {
     start: {
       message: "Which project would you like to know more about?",
@@ -66,11 +65,10 @@ function App() {
     end: {
       message:
         "Would you like to know about another project? You can ask me again!",
-      options: [
-        { label: "Yes", path: "start" },
-        { label: "No, thanks", path: "end" },
-      ],
-      chatDisabled: false,
+      options: {
+        items: ["Yes", "No, thanks"],
+        sendOutput: false,
+      },
     },
   };
 
