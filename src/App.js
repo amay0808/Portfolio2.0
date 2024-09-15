@@ -5,6 +5,7 @@ import "./style.css"; // Updated path to the copied CSS file
 
 function App() {
   const [currentStep, setCurrentStep] = useState("start");
+
   const flow = {
     start: {
       message: "Which project would you like to know more about?",
@@ -105,21 +106,6 @@ function App() {
             },
           }}
         />
-        <div>
-          <p>{currentFlow.message}</p>
-          {currentFlow.options && (
-            <div>
-              {currentFlow.options.map((option, index) => (
-                <button
-                  key={index}
-                  onClick={() => handleUserInput({ userInput: option.label })}
-                >
-                  {option.label}
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
       </div>
     </div>
   );

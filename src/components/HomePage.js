@@ -146,7 +146,7 @@ function HomePage() {
                 alt="Project thumbnail"
                 className="projects__image"
               />
-              <a href="http://synthesis-workshop.com.s3-website-us-east-1.amazonaws.com/">
+              <a href="https://synthesis-workshop.com/">
                 <button className="projects__view-btn">View project</button>
               </a>
               <a href="https://github.com/synthesis-workshop/frontend.git">
@@ -208,7 +208,7 @@ function HomePage() {
             <p>HTML CSS JavaScript</p>
           </li>
         </ul>
-        <section className="Cybersecurity">
+        <section className="cybersecurity-section">
           <h2 className="projects__tittle">Cybersecurity</h2>
           <ul className="skills__list">
             <li className="skill__item">
@@ -220,7 +220,7 @@ function HomePage() {
               <p>2 Years Experience</p>
             </li>
             <li className="skill__item">
-              <h3>NIST </h3>
+              <h3>NIST</h3>
               <p>2 Years Experience</p>
             </li>
             <li className="skill__item">
