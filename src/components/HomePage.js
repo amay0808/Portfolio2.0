@@ -3,7 +3,6 @@ import "../components/HomePage.css";
 import PatternRings from "../assets/images/pattern-rings.svg";
 import ProfilePic from "../assets/images/profile-pic.webp";
 import PatternCircle from "../assets/images/pattern-circle.svg";
-import Icon1 from "../assets/images/icon-frontend-mentor.svg";
 import Icon2 from "../assets/images/icon-github.svg";
 import Icon3 from "../assets/images/icon-twitter.svg";
 import Icon4 from "../assets/images/icon-linkedin.svg";
@@ -46,13 +45,6 @@ function HomePage() {
         </div>
         <div className="intro__bio-section">
           <div className="social-icons">
-            <a
-              href="https://www.frontendmentor.io/profile/amay0808"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={Icon1} alt="Frontend Mentor" />
-            </a>
             <a
               href="https://github.com/amay0808"
               target="_blank"
@@ -208,42 +200,7 @@ function HomePage() {
             <p>HTML CSS JavaScript</p>
           </li>
         </ul>
-        <section className="cybersecurity-section">
-          <h2 className="projects__tittle">Cybersecurity</h2>
-          <ul className="skills__list">
-            <li className="skill__item">
-              <h3>SEIM</h3>
-              <p>2 Years Experience</p>
-            </li>
-            <li className="skill__item">
-              <h3>Risk Management</h3>
-              <p>2 Years Experience</p>
-            </li>
-            <li className="skill__item">
-              <h3>NIST</h3>
-              <p>2 Years Experience</p>
-            </li>
-            <li className="skill__item">
-              <h3>Wireshark</h3>
-              <p>2 Years Experience</p>
-            </li>
-            <li className="skill__item">
-              <h3>Node.JS</h3>
-              <p>2 Years Experience</p>
-            </li>
-            <li className="skill__item">
-              <h3>MongoDB</h3>
-              <p>2 Years Experience</p>
-            </li>
-            <li className="skill__item">
-              <h3>Express</h3>
-              <p>2 Years Experience</p>
-            </li>
-            <li className="skill__item">
-              <h3>Python</h3>
-              <p>1 Years Experience</p>
-            </li>
-          </ul>
+        <section>
           <div className="skills__rings-image"></div>
         </section>
       </section>
@@ -270,13 +227,6 @@ function HomePage() {
             <p className="name">adrianmayfield</p>
             <div className="my-name-contact">
               <div className="social-icons-footer">
-                <a
-                  href="https://www.frontendmentor.io/profile/amay0808"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={Icon1} alt="Frontend Mentor" />
-                </a>
                 <a
                   href="https://github.com/amay0808"
                   target="_blank"

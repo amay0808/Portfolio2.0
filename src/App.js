@@ -8,7 +8,7 @@ function App() {
 
   const flow = {
     start: {
-      message: "Which project would you like to know more about?",
+      message: "Type below which project would you like to know more about!",
       path: (params) => {
         const userInput = params.userInput.toLowerCase().trim();
 

@@ -233,6 +233,9 @@ body {
   filter: invert(1);
   cursor: pointer;
 }
+.icon-black {
+  color: black;
+}
 
 /* ==============================
    BIO SECTION
@@ -390,64 +393,4 @@ body {
   font-family: "Space Grotesk Bold", Arial, sans-serif;
   display: flex;
   width: 1110px;
-}
-/* Glowing green animated border */
-.cybersecurity-section {
-  position: relative;
-  padding: 20px;
-  border-radius: 10px;
-  background: #111; /* Dark background to enhance the glowing effect */
-  border: 3px solid transparent;
-  border-image: linear-gradient(90deg, rgba(0, 255, 0, 1), rgba(0, 255, 0, 0)) 1;
-  box-sizing: border-box; /* Ensure padding does not affect border width */
-  overflow: hidden;
-  animation: moveBorder 7s linear infinite;
-}
-
-@keyframes moveBorder {
-  0% {
-    border-image-source: linear-gradient(
-      90deg,
-      rgba(0, 255, 0, 1) 0%,
-      rgba(0, 255, 0, 0) 25%
-    );
-    border-image-slice: 1;
-    background-size: 400% 400%;
-  }
-  25% {
-    border-image-source: linear-gradient(
-      180deg,
-      rgba(0, 255, 0, 1) 0%,
-      rgba(0, 255, 0, 0) 25%
-    );
-    border-image-slice: 1;
-    background-size: 400% 400%;
-  }
-  50% {
-    border-image-source: linear-gradient(
-      270deg,
-      rgba(0, 255, 0, 1) 0%,
-      rgba(0, 255, 0, 0) 25%
-    );
-    border-image-slice: 1;
-    background-size: 400% 400%;
-  }
-  75% {
-    border-image-source: linear-gradient(
-      360deg,
-      rgba(0, 255, 0, 1) 0%,
-      rgba(0, 255, 0, 0) 25%
-    );
-    border-image-slice: 1;
-    background-size: 400% 400%;
-  }
-  100% {
-    border-image-source: linear-gradient(
-      90deg,
-      rgba(0, 255, 0, 1) 0%,
-      rgba(0, 255, 0, 0) 25%
-    );
-    border-image-slice: 1;
-    background-size: 400% 400%;
-  }
 }
