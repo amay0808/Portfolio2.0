@@ -394,3 +394,45 @@ body {
   display: flex;
   width: 1110px;
 }
+@media (max-width: 768px) {
+  .projects__list {
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+
+  .projects__tittle {
+    font-size: 48px; /* Smaller font size for title on mobile */
+    line-height: 56px;
+  }
+
+  .projects__contact-btn {
+    margin-left: auto; /* Adjust button alignment for mobile */
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .projects__item {
+    margin-bottom: 20px; /* Space between projects on mobile */
+  }
+}
+@media (max-width: 768px) {
+  .skills {
+    padding: 0 20px;
+    flex-direction: row;
+    gap: 20px; /* Smaller gap on mobile */
+  }
+
+  .skills__column {
+    flex: 1; /* Allow columns to take equal width on mobile */
+  }
+
+  .skill__item h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .skill__item p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

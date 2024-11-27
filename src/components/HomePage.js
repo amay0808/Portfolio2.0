@@ -4,7 +4,7 @@ import PatternRings from "../assets/images/pattern-rings.svg";
 import ProfilePic from "../assets/images/profile-pic.webp";
 import PatternCircle from "../assets/images/pattern-circle.svg";
 import Icon2 from "../assets/images/icon-github.svg";
-import Icon3 from "../assets/images/icon-twitter.svg";
+import Icon3 from "../assets/images/bluesky-1.svg";
 import Icon4 from "../assets/images/icon-linkedin.svg";
 import Project1 from "../assets/images/project1.png";
 import Project2 from "../assets/images/project2.png";
@@ -53,11 +53,11 @@ function HomePage() {
               <img src={Icon2} alt="Github" />
             </a>
             <a
-              href="https://x.com/CodeWithAdrian"
+              href="https://bsky.app/profile/codewithadrian.bsky.social"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={Icon3} alt="Twitter" />
+              <img src={Icon3} alt="BlueSky" />
             </a>
             <a
               href="https://www.linkedin.com/in/adrianmayfield"
@@ -235,11 +235,11 @@ function HomePage() {
                   <img src={Icon2} alt="Github" />
                 </a>
                 <a
-                  href="https://twitter.com/amay0808"
+                  href="https://bsky.app/profile/codewithadrian.bsky.social"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={Icon3} alt="Twitter" />
+                  <img src={Icon3} alt="BlueSky" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/adrianmayfield"
