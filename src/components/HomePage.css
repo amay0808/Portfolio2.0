@@ -157,7 +157,7 @@ body {
 
 .projects__code-btn {
   top: calc(50% + 24px);
-  margin-top: 48px;
+  /* margin-top: 48px; */
 }
 
 .projects__item .projects__image-wrapper::before {
@@ -380,7 +380,9 @@ body {
   left: -160px;
 }
 .contact-section__text {
+  display: flex;
   width: 50%;
+  flex-direction: column;
 }
 
 .contact-section__description {
@@ -394,14 +396,71 @@ body {
   display: flex;
   width: 1110px;
 }
+
 @media (max-width: 768px) {
+  .homepage__name {
+    position: static;
+  }
+  .intro {
+    flex-direction: column-reverse;
+  }
+  ul.skills__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically if needed */
+  }
+
+  li.skill__item {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center; /* Center text within list items */
+  }
+
+  section.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the section content */
+  }
+
   .projects__list {
     grid-template-columns: 1fr; /* Single column for mobile */
   }
-
+  .projects__item {
+    margin-bottom: 20px; /* Space between projects on mobile */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center content horizontally */
+  }
+  .projects__view-btn,
+  .projects__code-btn {
+    font-size: 14px; /* Adjust font size for mobile */
+    line-height: 22px; /* Adjust line height for mobile */
+    padding-bottom: 10px;
+  }
   .projects__tittle {
     font-size: 48px; /* Smaller font size for title on mobile */
     line-height: 56px;
+    text-align: center; /* Center title */
+  }
+  .projects__item .projects__image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .projects__view-btn,
+  .projects__code-btn {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .projects__view-btn {
+    top: calc(50% - 30px); /* Adjust top value for mobile */
+  }
+
+  .projects__code-btn {
+    top: calc(50% + 30px); /* Adjust top value for mobile */
   }
 
   .projects__contact-btn {
@@ -414,7 +473,25 @@ body {
   .projects__item {
     margin-bottom: 20px; /* Space between projects on mobile */
   }
+  .projects__item h3 {
+    width: 100%; /* or auto */
+    text-align: center;
+  }
+
+  .projects__skills {
+    text-align: center; /* Center skills */
+  }
+
+  .projects__skills p {
+    font-size: 16px; /* Smaller font size for skills on mobile */
+  }
+  .projects__item p {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
+
 @media (max-width: 768px) {
   .skills {
     padding: 0 20px;
@@ -434,5 +511,14 @@ body {
   .skill__item p {
     font-size: 16px;
     line-height: 24px;
+  }
+  #contact-section {
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+  }
+  .contact-section__text {
+    flex-direction: column;
+    align-items: center;
   }
 }

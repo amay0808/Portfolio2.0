@@ -222,6 +222,7 @@ function HomePage() {
               />
             </div>
           </div>
+
           <ContactForm />
           <div className="wrapper">
             <p className="name">adrianmayfield</p>
